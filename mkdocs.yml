@@ -6,6 +6,7 @@ theme:
     - navigation.tabs
     # - navigation.tabs.sticky
     - navigation.sections
+    - navigation.expand
     - toc.integrate
     - navigation.top
     - search.suggest
