@@ -66,4 +66,5 @@ nav:
     - Microsoft:
         - 'Windows Group Policies': 'GPOs.md'
         - 'MDE': 'MDE.md'
+        - 'Intune': 'Intune.md'
     - Apple: 'Apple.md'

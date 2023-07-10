@@ -123,3 +123,24 @@ w32tm /resync
 ```
 Restart the computer to test the issue again.
 W32tm.exe is used to configure Windows Time service settings. It can also be used to diagnose problems with the time service. W32tm.exe is the preferred command line tool for configuring, monitoring, or troubleshooting the Windows Time service.
+## How to increase or Change trust relationship time limit on domain controller
+![Windows Trust Relationship GPO](img/Increase-Trust-Relashionship-Time.png)
+## How to check if a windows registry key exists using powershell?
+You can use the `Test-Path` cmdlet in PowerShell to check if a Windows registry key exists. The syntax is as follows:
+```ps
+Test-Path 'Registry::HKEY_LOCAL_MACHINE\Path\To\Key'
+```
+Replace `'HKEY_LOCAL_MACHINE\Path\To\Key'` with the path to the registry key you want to check. If the key exists, the cmdlet will return `True`; if it doesn't exist, it will return `False`.
+## Verify groups
+```cmd
+whoami /groups
+```
+## Adding a domain admin
+// Create a new user
+```cmd
+net user mighty Password123! /add /domain
+```ps
+// Add the new user to Administrator local group
+```cmd
+net group "Administrators" mighty /add /domain
+```

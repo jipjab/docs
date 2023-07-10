@@ -4,7 +4,7 @@
 ## Enable the Remote Desktop Session Host policies
 ## Enable Network Level Authentication
 ## Force NumLock on Windows 10
-```sh
+```cmd
 Key Path: .DEFAULT\Control Panel\Keyboard
 Value data: 2
 ```
