@@ -57,3 +57,13 @@ markdown_extensions:
 
 copyright: |
   &copy; 2023 <a href="#"  target="_blank" rel="noopener">JiPJaB</a>
+
+nav:
+    - Home: 'index.md'
+    - Guides:
+        - 'Tips & Tricks': 'Tricks.md'
+        - 'Minimum Security Settings': 'SecurityProcesses.md'
+    - Microsoft:
+        - 'Windows Group Policies': 'GPOs.md'
+        - 'MDE': 'MDE.md'
+    - Apple: 'Apple.md'
