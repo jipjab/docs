@@ -2,6 +2,7 @@ site_name: Mes Documentations
 #site_url: https://james-willett.github.io/mkdocs-material-youtube-tutorial/
 theme:
   name: material
+  custom_dir: overrides
   features:
     - navigation.tabs
     - navigation.sections
@@ -67,4 +68,4 @@ nav:
         - 'Windows Group Policies': 'GPOs.md'
         - 'MDE': 'MDE.md'
         - 'Intune': 'Intune.md'
-    - Apple: 'Apple.md'
+    #- Apple: 'Apple.md'
