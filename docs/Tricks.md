@@ -90,3 +90,36 @@ This adds the user to the Local Administrators Group
 ```sh
 net localgroup administrators [username] /add
 ```
+## How to force Windows 10 time to synch with a time server?
+### Method 1:
+Press Windows key + r and type **services.msc** and press enter.
+Right click on Windows Time and select properties to check the status of the service.
+Restart the Windows Time service.
+Click on OK.
+Restart the computer
+### Method 2:
+Click on clock and select “Change date and time settings”.
+Click on the “Internet Time” tab.
+Check if it is set to “synchronize the time with time.windows.com”
+If the option is selected, click on change settings to check the option “Synchronize with an Internet Time server”
+Click on OK.
+### Method 3:
+Press Windows key + X and select Command prompt(Admin).
+Type each one of the command below and press enter.
+```ps
+net stop w32time
+```
+```ps
+w32tm /unregister
+```
+```ps
+w32tm /register
+```
+```ps
+net start w32time
+```
+```ps
+w32tm /resync
+```
+Restart the computer to test the issue again.
+W32tm.exe is used to configure Windows Time service settings. It can also be used to diagnose problems with the time service. W32tm.exe is the preferred command line tool for configuring, monitoring, or troubleshooting the Windows Time service.
