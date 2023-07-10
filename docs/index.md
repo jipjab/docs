@@ -1,5 +1,5 @@
 # Take control!
-    Monitor, manage, and secure your IT infrastructure with enterprise-grade solutions built from the ground up.
+Monitor, manage, and secure your IT infrastructure with enterprise-grade solutions built from the ground up.
 ## Commands
 
 * `mkdocs new [dir-name]` - Create a new project.
