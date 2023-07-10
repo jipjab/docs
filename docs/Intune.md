@@ -11,4 +11,3 @@ Get-WindowsAutopilotInfo -Online
 ```
 #### Resources:
 - [Manually register devices with Windows Autopilot | Microsoft Learn](https://learn.microsoft.com/en-us/mem/autopilot/add-devices)
-- [[Autopilote troubleshooting]]
