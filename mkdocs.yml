@@ -4,9 +4,7 @@ theme:
   name: material
   features:
     - navigation.tabs
-    # - navigation.tabs.sticky
     - navigation.sections
-    - navigation.expand
     - toc.integrate
     - navigation.top
     - search.suggest
@@ -14,6 +12,7 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+
   language: en
   palette:
     - scheme: default
@@ -37,6 +36,7 @@ extra:
       link: https://twitter.com/daddydy
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/mutuyimana
+  generator: false
 
 markdown_extensions:
   - pymdownx.highlight:
