@@ -144,3 +144,5 @@ net user mighty Password123! /add /domain
 ```cmd
 net group "Administrators" mighty /add /domain
 ```
+## How to prevent your users from downloading and installing Office via the Office portals
+![Prevent your users from downloading and installing Office](img/MS365-apps-install-options.png)
