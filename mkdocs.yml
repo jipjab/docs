@@ -7,10 +7,9 @@ theme:
   favicon: img/lexii-io-icon.png
   features:
     - navigation.tabs
-    - navigation.sections
-    - navigation.path
+    #- navigation.sections
+    #- navigation.path
     - toc.integrate
-    - navigation.top
     - search.suggest
     - search.highlight
     - content.tabs.link

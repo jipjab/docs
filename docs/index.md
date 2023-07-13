@@ -1,7 +1,11 @@
+---
+hide:
+  - navigation
+  - toc
+  - footer
+---
 
-# Home
-
-Monitor, manage, and secure your IT infrastructure with enterprise-grade solutions built from the ground up.
+# Monitor, manage, and secure your IT infrastructure with enterprise-grade solutions built from the ground up.
 
 ## Topics & Projects
 
