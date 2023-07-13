@@ -3,16 +3,9 @@
 
 Monitor, manage, and secure your IT infrastructure with enterprise-grade solutions built from the ground up.
 
-## Commands
+## Topics & Projects
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* `Tips & Tricks` - All tricks and usefull commands I use daily.
+* `Security Settings` - Some of the best security practices.
+* `Personal projects` - Ideas and ongoing projects
+* `Other things`
