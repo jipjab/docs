@@ -2,95 +2,85 @@
 
 ## GPOs
 ### View Applied Policies with the Command Prompt
+
+RSOP.MSC
+
 ```cmd
 gpresult /Scope User /v
 gpresult /User xxx /v
 gpresult /r
 ```
-// save results to a file
-```cmd
-Gpresult /R > c:\RsopReport.txt
+
+```cmd title="Save results to a file"
+gpresult /R > c:\RsopReport.txt
 ```
-// for a machine (needs to be admin and can be a remote machine)
-```cmd
+
+```cmd title="For a machine (needs to be admin and can be a remote machine)"
 gpresult/r /scope computer
 ```
 [Use GPResult Command to Check Group Policy: Step-by-step Guide (comparitech.com)](https://www.comparitech.com/net-admin/how-to-use-gpresult-command/#:~:text=GPResult%20Scope%20Command,users%2C%20and%20target%20computer%27s%20settings.)
-
-
 ## Windows Licences Activation
-### Microsoft Change Product Key Of Office 2016/2013
-=> look for a file called **OSPP.VBS**
-
-If you’re running 64-bit Office on 64-bit Windows, use the following command:
-```sh
-cscript “C:\Program Files\Microsoft Office\Office15\OSPP.VBS”/inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
-```
-### Activate Windows Server 2019
-From a command prompt use 
-```sh
+```cmd title="Activate Windows Server 2019 "
 cscript c:\windows\system32\slmgr.vbs /ipk <product_key>
 ```
-### Activate Windows Server 2022
-From a command prompt use
-```sh
-Dism /online /Set-Edition:ServerStandard /ProductKey:7QKY9-N6G2J-3W9QY-2PDMF-BY8DW /AcceptEula
+> example: ```cmd cscript c:\windows\system32\slmgr.vbs /ipk XXXXX-XXXXX-XXXXX-XXXXX-XXXXX```
+
+```cmd title="Activate Windows Server 2022"
+Dism /online /Set-Edition:ServerStandard /ProductKey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /AcceptEula
 ```
-```sh
-cscript c:\windows\system32\slmgr.vbs /ipk GTDN9-YQ2MP-K8QYD-GPXMT-XQDVR
+## Microsoft Change Product Key Of Office 2016/2013
+=> look for a file called **OSPP.VBS**
+```cmd title="If you’re running 64-bit Office on 64-bit Windows, use the following command:"
+cscript “C:\Program Files\Microsoft Office\Office15\OSPP.VBS”/inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
 ```
-## Run Computer management as admin
-```sh
+## Shortcut to Run Computer management
+```
 compmgmt.msc
 ```
 ## Windows System UI Languages
-### To See System Default UI Language of Windows 10 in PowerShell
-```sh
+```powershell title="To See System Default UI Language of Windows 10 in PowerShell"
 Get-Culture | Format-List -Property *
 ```
-### To See System Default UI Language of Windows 10 in Command Prompt (as admin)
-```sh
+```powershell title="To See System Default UI Language of Windows 10 in Command Prompt (as admin)"
 dism /online /get-intl
 ```
 ### To See System Default and Installed Language of Windows 10 in Registry Editor
-In Registry Editor, browse to the key location below. (see screenshot below)
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Nls\Language
-## How to See Currently Logged in Users in Windows 10 / 8 / 7
-```sh
+In Registry Editor, browse to the key location below.</br>
+```HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Nls\Language```
+
+```powershell title="How to See Currently Logged in Users in Windows 10 / 8 / 7"
 query user
 ```
-## See Windows Installed versions
-```sh
+
+```cmd title="Check installed Windows versions 1"
 systeminfo
 ```
-## Connaitre l'IP public de sortie d'une machine par command
-nslookup myip.opendns.com resolver1.opendns.com
-## Command to reboot windows computer
-```sh
-shutdown /r
+```cmd title="Check installed Windows versions 2"
+winver
 ```
-=> The above command will set a time out of 30 seconds to close the applications. After 30 seconds, windows reboot will start.
-## Change user password in Windows 10!
+```cmd title="Connaitre l'IP public de sortie d'une machine par command"
+nslookup myip.opendns.com resolver1.opendns.com
+```
+```cmd title="Command to reboot windows computer"
+shutdown /r /t 0
+```
+## Change user password in Windows 10
 cmd.exe in administrative mode [Windows-Logo+X].
-```sh
+```cmd title="See all Windows-10 User Accounts."
 net user
 ```
-See all Windows-10 User Accounts.
-
-Then type in the command (in this case for the administrator account): 
-```sh
+```cmd title="Then type in the command (in this case for the administrator account):"
 net user administrator *
 ```
 And now enter the new Windows 10 password and retype the password to confirm the password.
-This creates the user account:
-```sh
+```cmd title="This creates the user account:"
 net user /add [username] [password]
 ```
-This adds the user to the Local Administrators Group
-```sh
+
+```cmd title="This adds the user to the Local Administrators Group"
 net localgroup administrators [username] /add
 ```
-## How to force Windows 10 time to synch with a time server?
+## How to force Windows 10 & 11 to synchronise with a clock time server?
 ### Method 1:
 Press Windows key + r and type **services.msc** and press enter.
 Right click on Windows Time and select properties to check the status of the service.
@@ -127,7 +117,7 @@ W32tm.exe is used to configure Windows Time service settings. It can also be use
 ![Windows Trust Relationship GPO](img/Increase-Trust-Relashionship-Time.png)
 ## How to check if a windows registry key exists using powershell?
 You can use the `Test-Path` cmdlet in PowerShell to check if a Windows registry key exists. The syntax is as follows:
-```ps
+```cmd
 Test-Path 'Registry::HKEY_LOCAL_MACHINE\Path\To\Key'
 ```
 Replace `'HKEY_LOCAL_MACHINE\Path\To\Key'` with the path to the registry key you want to check. If the key exists, the cmdlet will return `True`; if it doesn't exist, it will return `False`.
@@ -139,7 +129,7 @@ whoami /groups
 // Create a new user
 ```cmd
 net user mighty Password123! /add /domain
-```ps
+```
 // Add the new user to Administrator local group
 ```cmd
 net group "Administrators" mighty /add /domain

@@ -44,6 +44,7 @@ extra:
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
+  - pymdownx.critic
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - admonition
@@ -66,8 +67,10 @@ nav:
     - Guides:
         - 'Tips & Tricks': 'Tricks.md'
         - 'Minimum Security Settings': 'SecurityProcesses.md'
+    #- Controles CIS:
+    #    - 'M365/AAD': 'Controles-CIS.md'
     - Microsoft:
         - 'Windows Group Policies': 'GPOs.md'
         - 'MDE': 'MDE.md'
         - 'Intune': 'Intune.md'
-    #- Apple: 'Apple.md'
+    - Cybereason: 'Cybereason.md'
