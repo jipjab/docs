@@ -2,20 +2,16 @@
 
 ## GPOs
 ### View Applied Policies with the Command Prompt
-
-RSOP.MSC
-
 ```cmd
-gpresult /Scope User /v
-gpresult /User xxx /v
 gpresult /r
 ```
-
+```cmd title="User scope"
+gpresult /User xxx /v
+```
 ```cmd title="Save results to a file"
 gpresult /R > c:\RsopReport.txt
 ```
-
-```cmd title="For a machine (needs to be admin and can be a remote machine)"
+```cmd title="Machine scope (needs to be admin and can be a remote machine)"
 gpresult/r /scope computer
 ```
 [Use GPResult Command to Check Group Policy: Step-by-step Guide (comparitech.com)](https://www.comparitech.com/net-admin/how-to-use-gpresult-command/#:~:text=GPResult%20Scope%20Command,users%2C%20and%20target%20computer%27s%20settings.)
@@ -81,19 +77,19 @@ net user /add [username] [password]
 net localgroup administrators [username] /add
 ```
 ## How to force Windows 10 & 11 to synchronise with a clock time server?
-### Method 1:
+### Method 1
 Press Windows key + r and type **services.msc** and press enter.
 Right click on Windows Time and select properties to check the status of the service.
 Restart the Windows Time service.
 Click on OK.
 Restart the computer
-### Method 2:
+### Method 2
 Click on clock and select “Change date and time settings”.
 Click on the “Internet Time” tab.
 Check if it is set to “synchronize the time with time.windows.com”
 If the option is selected, click on change settings to check the option “Synchronize with an Internet Time server”
 Click on OK.
-### Method 3:
+### Method 3
 Press Windows key + X and select Command prompt(Admin).
 Type each one of the command below and press enter.
 ```ps
