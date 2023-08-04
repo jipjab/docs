@@ -18,3 +18,6 @@ Ensemble d'événements ayant lieu dans une opération de piratage.
 
 A MalOp includes the **attack's root cause**, the **timeline of spread**, the **involved malware** and other **adversarial activities**, **malicious communication** and the **affected endpoints and users**
 asd
+
+## Services Cybereason
+![Cybereason-NGAV-TaskManager](img/cybereason/Cybereason-NGAV.png)

@@ -45,3 +45,14 @@ under Delegation > Advanced >
 
 
 Pour le script onboarding il faut prendre la version pour les GPO car elle n'est pas interactive
+
+## Disable MS Defender service
+La désactivation de Windows Defender 2021 peut être effectuée en utilisant l’invite de commande (CMD). 
+sc config WinDefend start=disabled
+
+## Disable MS Defender par GPO
+
+Browse the following path: Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus
+Double-click the "Turn off Microsoft Defender Antivirus" policy.
+![Disable MDE by GPO 01](img/mde/SCR-20230717-rz0.png)
+![Disable MDE by GPO 02](img/mde/SCR-20230802-mli.png)

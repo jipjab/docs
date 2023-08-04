@@ -132,3 +132,19 @@ net group "Administrators" mighty /add /domain
 ```
 ## How to prevent your users from downloading and installing Office via the Office portals
 ![Prevent your users from downloading and installing Office](img/MS365-apps-install-options.png)
+
+## DC Server Migration
+1. Prepare Existing AD forest for server 2019 DC
+
+
+## Check FSMO roles location
+```powershell title="View FSMO role holders"
+netdom query fsmo
+```
+
+![rere](https://www.petenetlive.com/KB/Article/0000240)
+
+## Powershell, How to get date of last Windows update install or at least checked for an update?
+```powershell
+gwmi win32_quickfixengineering |sort installedon -desc 
+```
