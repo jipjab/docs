@@ -1,5 +1,5 @@
 # What is Intune
-![Microsoft Intune](img/what-is-intune.png)
+![Microsoft Intune](img/what-is-intune.png){ width="500" }
 ## Manually register devices for Windows Autopilot
 ALT + F10 on windows boot apres avoir selectionner la bonne langue de clavier
 
