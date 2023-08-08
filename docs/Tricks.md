@@ -142,9 +142,17 @@ net group "Administrators" mighty /add /domain
 netdom query fsmo
 ```
 
-![rere](https://www.petenetlive.com/KB/Article/0000240)
+[More explainations](https://www.petenetlive.com/KB/Article/0000240)
 
 ## Powershell, How to get date of last Windows update install or at least checked for an update?
 ```powershell
 gwmi win32_quickfixengineering |sort installedon -desc 
 ```
+
+## Intune registration troubleshooting
+
+https://learn.microsoft.com/en-us/samples/azure-samples/dsregtool/dsregtool/
+
+Pour les serveurs windows 2012: https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt?view=o365-worldwide#instructions-for-applying-computer-join-rule-in-aad-connect
+
+Windows server 2012r2 MDE enrollment status: AAD Connect misconfiguration: **AAD Connect misconfiguration**

@@ -8,4 +8,10 @@
 Key Path: .DEFAULT\Control Panel\Keyboard
 Value data: 2
 ```
-## WinRM with domain controller Group Policy
+## Creer des filtres GPO pour cibles certains types de machines
+Il faut utiliser des filtres WMI
+
+https://learn.microsoft.com/en-us/windows/security/operating-system-security/network-security/windows-firewall/create-wmi-filters-for-the-gpo
+
+
+
