@@ -110,7 +110,7 @@ w32tm /resync
 Restart the computer to test the issue again.
 W32tm.exe is used to configure Windows Time service settings. It can also be used to diagnose problems with the time service. W32tm.exe is the preferred command line tool for configuring, monitoring, or troubleshooting the Windows Time service.
 ## How to increase or Change trust relationship time limit on domain controller
-![Windows Trust Relationship GPO](img/Increase-Trust-Relashionship-Time.png)
+![Windows Trust Relationship GPO](img/Increase-Trust-Relashionship-Time.png){ width="500" }
 ## How to check if a windows registry key exists using powershell?
 You can use the `Test-Path` cmdlet in PowerShell to check if a Windows registry key exists. The syntax is as follows:
 ```cmd
@@ -131,7 +131,7 @@ net user mighty Password123! /add /domain
 net group "Administrators" mighty /add /domain
 ```
 ## How to prevent your users from downloading and installing Office via the Office portals
-![Prevent your users from downloading and installing Office](img/MS365-apps-install-options.png)
+![Prevent your users from downloading and installing Office](img/MS365-apps-install-options.png){ width="500" }
 
 ## DC Server Migration
 1. Prepare Existing AD forest for server 2019 DC
@@ -142,7 +142,7 @@ net group "Administrators" mighty /add /domain
 netdom query fsmo
 ```
 
-[More explainations](https://www.petenetlive.com/KB/Article/0000240)
+[More explainations](https://www.petenetlive.com/KB/Article/0000240){ width="500" }
 
 ## Powershell, How to get date of last Windows update install or at least checked for an update?
 ```powershell
