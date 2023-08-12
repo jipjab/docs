@@ -156,3 +156,13 @@ https://learn.microsoft.com/en-us/samples/azure-samples/dsregtool/dsregtool/
 Pour les serveurs windows 2012: https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt?view=o365-worldwide#instructions-for-applying-computer-join-rule-in-aad-connect
 
 Windows server 2012r2 MDE enrollment status: AAD Connect misconfiguration: **AAD Connect misconfiguration**
+
+```
++----------------------------------------------------------------------+
+| Tenant Details                                                       |
++----------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------+
+```
+[Intune Device Registration troubleshooter Tool - DSRegTool.ps1](https://learn.microsoft.com/en-us/samples/azure-samples/dsregtool/dsregtool)
