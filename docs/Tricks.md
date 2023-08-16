@@ -166,3 +166,21 @@ Windows server 2012r2 MDE enrollment status: AAD Connect misconfiguration: **AAD
 +----------------------------------------------------------------------+
 ```
 [Intune Device Registration troubleshooter Tool - DSRegTool.ps1](https://learn.microsoft.com/en-us/samples/azure-samples/dsregtool/dsregtool)
+
+## "An error occurred while attempting to connect to server "MY-PC-NAME". Check that the Virtual Machine service is running and that you are authorized to connect to the server.
+
+Check if the service 
+
+## COnnect on Microsoft Graph with powershell
+
+```powershell title="Install the module"
+Install-Module Microsoft.Graph -Scope AllUsers   
+Connect-MgGraph -TenantId "yourTenant GUID"
+```
+```powershell title="Connect"
+Install-Module Microsoft.Graph -Scope AllUsers   
+Connect-MgGraph -TenantId "yourTenant GUID"
+```
+
+## Restrict creation of teams
+https://techlabs.blog/categories/office-365/stop-users-from-being-able-to-create-microsoft-teams

@@ -72,7 +72,7 @@ The account lockout policy is a built-in security measure that limits malicious 
 It could be interesting to identify machines or IPs from where Account Lockout threshold is triggered only based on MDI raw data.
 Remark: DeviceName and IPAdress can sometime be empty (no raw data).
 
-```kql title="Tips 12 – Identify machines or IPs from where Account Lockout threshold is triggered"
+```kql title="Identify machines or IPs from where Account Lockout threshold is triggered"
 IdentityLogonEvents
 | where Application == @"Active Directory" // AD only
 | where AccountDomain == @"msdemo.org" // if needed to filter by domain
