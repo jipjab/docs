@@ -3,194 +3,535 @@ Fonction Windows    Commande à exécuter
 
 ``` title="Accès bureau à distance"
 mstsc
-``
-Accéder aux comptes utilisateurs	
+```
+``` title="Accéder aux comptes utilisateurs"
 control.exe /name Microsoft.UserAccounts
-
-Accéder aux paramètres utilisateurs	
+```
+``` title="Accéder aux paramètres utilisateurs"
 netplwiz
-
-Accéder aux paramètres utilisateurs avancés	
+```
+``` title="Accéder aux paramètres utilisateurs avancés"
 azman.msc
-
-Activation de Windows
+```
+``` title="Activation de Windows"
 slui
-
-Activer ClearType	
+```
+``` title="Activer ClearType"	
 cttune
-
-Activer la loupe
+```
+``` title="Activer la loupe"
 magnify
-
-Activer ou désactiver des fonctionnalités Windows	control appwiz.cpl,,2
-Administrateur OBDC	odbcad32
-Affiche l'écran de veille "Bulles"	bubbles.scr
-Affiche l'écran de veille "Mystify"	mystify.scr
-Affiche l'écran de veille "Ruban"	ribbons.scr
-Aide Windows	winhlp32
-Ajouter un périphérique	devicepairingwizard
-Analyse anti logiciel malveillant	mrt
-Analyseur de performances	perfmon
-Applications par défaut	control appwiz.cpl,,3
-Assistance à distance (Windows remote)	msra
-Assistant ajout de matériel	hdwwiz
-Assistant création d'un dossier partagé	shrpubw
-Assistant de numérisation (Scanner)	wiaacmgr
-Assistant Iexpress	iexpress
-C:\Windows\debug	debug
-Calculatrice	calc
-Calibration des couleurs	dccw
-Centre de mobilité Windows	mblctr
-Centre de synchronisation	mobsync
-Centre Réseau et partage	control.exe /name Microsoft.NetworkAndSharingCenter
-Certificats	certmgr.msc
-Clavier visuel	osk
-Clavier visuel	tabtip
-Client Server SQL	cliconfg
-Comptes utilisateurs	control userpasswords2
-Configuration driver OBDC	odbcconf
-Configuration iSCSI	iscsicpl
-Configuration système	msconfig
-Connexions réseau	control netconnections
-Connexions réseaux	ncpa.cpl
-Console de Management Microsoft	mmc
-Contrôle WMI	wmimgmt.msc
-Contrôleur de jeux	joy.cpl
-Créer un disque de réparation	recdisc
-Créer un lecteur de récupération	recoverydrive
-Date et heure	timedate.cpl
-Diagnostic DirectX	dxdiag
-Dossier Windows Easy Transfer	migwiz
-Dossiers des polices	fonts
-Dossiers partagés	fsmgmt.msc
-Définir les paramètres par défaut	computerdefaults
-Défragmenteur de disque	dfrgui
-Editeur de caractères	eudcedit
-Editeur de registre	regedit
-Editeur de registre 32 bits	regedt32
-Editeur de stratégie locale	gpedit.msc
-Enregistreur d'actions utilisateurs	psr
-Fax (éditeur de page de garde)	fxscover
-Fonctionnalités Windows	optionalfeatures
-Gestion de l'ordinateur	compmgmt.msc
-Gestion de l'ordinateur	compmgmtlauncher
-Gestion de module de plateforme sécurisée	tpm.msc
-Gestion des disques	diskmgmt.msc
-Gestion des imprimantes	printmanagement.msc
-Gestionnaire de périphériques	devmgmt.msc
-Gestionnaire de périphériques	hdwwiz.cpl
-Gestionnaire de tâches	taskmgr
-Gestionnaire du vérificateur de pilote	verifier
-Gestionnaires de tâches	launchtm
-Gérer le matériel du module de plateforme sécurisée (TPM)	TpmInit
-Historique des fichiers	filehistory
-Importer des contacts dans Windows	wabmig
-Informations système	msinfo32
-Installation de pack de langage	lpksetup
-Installer un programme à partir du réseau	control appwiz.cpl,,1
-Interface utilisateur de l'imprimante	printui
-Internet Explorer	iexplore
-Jeu de stratégie résultant	rsop.msc
-Lecteur Windows Media	dvdplay
-Lisibilité de l'écran	utilman
-Migration d'imprimante	printbrmui
-Migration de ccontenus protégés	dpapimig
-Mixeur de volume	sndvol
-Modem et Téléphone	telephon.cpl
-Modifier l'affichage sur plusieurs écrans	displayswitch
-Moniteur de ressource	resmon
-Moniteur de ressources	perfmon /res
-Narrateur	narrator
-Nettoyage de disque	cleanmgr
-Notepad	notepad
-Observateur d'évènements	eventvwr.msc
-Option d'arrêt	bootim
-Options d'alimentation	powercfg.cpl
-Options d'ergonomie	control access.cpl
-Options de l'explorateur de fichiers	control folders
-Options de performance	systempropertiesperformance
-Options de personnalisation	control color
-Options de personnalisation	control desktop
-Options Internet	inetcpl.cpl
-Outil capture	snippingtool
-Outil de calibration	tabcal
-Outil de diagnostique Microsoft	msdt
-Outils d'administration	control admintools
-Ouvre l'application mail définie par défaut	mailto:
-Ouvre l'interface d'arrêt à distance	shutdown -i
-Ouvre le dossier contacts	wab
-Ouvrir l'invite de commande	cmd
-Ouvrir l'outil de résolution des problèmes	control.exe /name Microsoft.Troubleshooting
-Ouvrir la corbeille	shell:recyclebinfolder
-Ouvrir le dossier documents	documents
-Ouvrir le dossier favoris	favorites
-Ouvrir le dossier photos	pictures
-Ouvrir le dossier vidéos	videos
-Ouvrir les dossier téléchargements	downloads
-Ouvrir les fichiers récents	recent
-Ouvrir les paramètres de barre des tâches	control.exe /name Microsoft.TaskbarandStartMenu
-Ouvrir Windows CardSpace	control.exe /name Microsoft.cardspace
-Ouvrir Windows Sideshow	control.exe /name Microsoft.WindowsSideshow
-Paint	mspaint
-Paint	pbrush
-Panneau de configuration	control
-Panneau de saisie pour les mathématiques	mip
-Paramètres d'affichage	dpiscaling
-Paramètres de contrôle de compte d'utilisateur (UAC)	useraccountcontrolsettings
-Paramètres de présentation	presentationsettings
-Paramètres de Windows Script Host	wscript
-Paramètres des couleurs	colorcpl
-Pare-feu Windows Defender	firewall.cpl
-Personnes à proximité	collab.cpl
-Planificateur de tâches	taskschd.msc
-Planificateur de tâches	control schedtasks
-Polices	fontview
-Polices	control fonts
-Programme d'installation de Windows Update en mode autonome	wusa
-Programmes et fonctionnalités	appwiz.cpl
-Propriété de la souris	main.cpl
-Propriétés de la souris	control mouse
-Propriétés du clavier	control keyboard
-Propriétés protection du système	systempropertiesprotection
-Propriétés système	sysdm.cpl
-Propriétés système avancées	systempropertiesadvanced
-Propriétés système matériel	systempropertieshardware
-Propriétés système ordinateur	systempropertiescomputername
-Propriétés système utilisation à distance	systempropertiesremote
-Prévention de l'exécution des données	systempropertiesdataexecutionprevention
-Périphériques et imprimantes	control printers
-Register Server (OLE)	regsvr32
-Restauration système	rstrui
-Région et Langue	intl.cpl
-Réinitialiser Windows	systemreset
-Résolution d'écran	desk.cpl
-Sauvegarder et restaurer des fichiers Windows	sdclt
-Sauvegarder les bases de données utilisateurs et mots de passe	credwiz
-Se connecter à un réseau distant (ex VPN)	rasphone
-Se déconnecter	logoff
-Services	services.msc
-Services des composants	comexp.msc
-Services des composants	dcomcnfg
-Son	mmsys.cpl
-Stratégie de sécurité locale	secpol.msc
-Stylet et fonction tactile	tabletpc.cpl
-Système de fichier EFS	rekeywiz
-Sécurité et maintenance	wscui.cpl
-Table des caractères	charmap
-Testeur WMI	wbemtest
-Transfert de fichiers Bluetooth	fsquirt
-Télécopie et numérisation Windows	wfs
-Téléphone	dialer
-Utilisateurs et goupes locaux	lusrmgr.msc
-Version de Windows	winver
-Vérification des signatures de fichiers	sigverif
-Windows Disc Image Burning Tool	isoburn
-Windows Explorer	explorer
-Windows Firewall avec sécurité avancée	wf.msc
-Windows Media Player	wmplayer
-Windows PowerShell	powershell
-Windows PowerShell ISE	powershell_ise
-Windows Update	wuapp
-WordPad	write
-Wordpad	wordpad
-XPS Viewer	xpsrchvw
+```
+``` title="Activer ou désactiver des fonctionnalités Windows"
+control appwiz.cpl,,2
+```
+``` title="Administrateur OBDC"
+odbcad32
+```
+``` title="Affiche l'écran de veille - Bulles"
+bubbles.scr
+```
+``` title="Affiche l'écran de veille - Mystify"
+mystify.scr
+```
+``` title="Affiche l'écran de veille - Ruban"
+ribbons.scr
+```
+``` title="Aide Windows"
+winhlp32
+```
+``` title="Ajouter un périphérique"
+devicepairingwizard
+```
+``` title="Analyse anti logiciel malveillant"
+mrt
+```
+``` title="Analyseur de performances"
+perfmon
+```
+``` title="Applications par défaut"	
+control appwiz.cpl,,3
+```
+``` title="Assistance à distance (Windows remote)"
+msra
+```
+``` title="Assistant ajout de matériel"
+hdwwiz
+```
+``` title="Assistant création d'un dossier partagé"
+shrpubw
+```
+``` title="Assistant de numérisation (Scanner)"
+wiaacmgr
+```
+``` title="Assistant Iexpress"
+iexpress
+```
+``` title="C:\Windows\debug"
+debug
+```
+``` title="Calculatrice"
+calc
+```
+``` title="Calibration des couleurs"
+dccw
+```
+``` title="Centre de mobilité Windows"
+mblctr
+```
+``` title="Centre de synchronisation"
+mobsync
+```
+``` title="Centre Réseau et partage"
+control.exe /name Microsoft.NetworkAndSharingCenter
+```
+``` title="Certificats"
+certmgr.msc
+```
+``` title="Clavier visuel"
+osk
+```
+``` title="Clavier visuel"
+tabtip
+```
+``` title="Client Server SQL"
+cliconfg
+```
+``` title="Comptes utilisateurs	control"
+userpasswords2
+```
+``` title="Configuration driver OBDC"
+odbcconf
+```
+``` title="Configuration iSCSI"
+iscsicpl
+```
+``` title="Configuration système"
+msconfig
+```
+``` title="Connexions réseau"
+control netconnections
+```
+``` title="Connexions réseaux"
+ncpa.cpl
+```
+``` title="Contrôle WMI"
+wmimgmt.msc
+```
+``` title="Contrôleur de jeux"
+joy.cpl
+```
+``` title="Créer un disque de réparation"
+recdisc
+```
+``` title="Créer un lecteur de récupération"
+recoverydrive
+```
+``` title="Date et heure"
+timedate.cpl
+```
+``` title="Diagnostic DirectX"
+dxdiag
+```
+``` title="Dossier Windows Easy Transfer"
+migwiz
+```
+``` title="Dossiers des polices"
+fonts
+```
+``` title="Dossiers partagés"
+fsmgmt.msc
+```
+``` title="Définir les paramètres par défaut"
+computerdefaults
+```
+``` title="Défragmenteur de disque"
+dfrgui
+```
+``` title="Editeur de caractères"
+eudcedit
+```
+``` title="Editeur de registre"
+regedit
+```
+``` title="Editeur de registre 32 bits"
+regedt32
+```
+``` title="Editeur de stratégie locale"
+gpedit.msc
+```
+``` title="Enregistreur d'actions utilisateurs"
+psr
+```
+``` title="Fax (éditeur de page de garde)"
+fxscover
+```
+``` title="Fonctionnalités Windows"
+optionalfeatures
+```
+``` title="Gestion de l'ordinateur"
+compmgmt.msc
+```
+``` title="Gestion de l'ordinateur"
+compmgmtlauncher
+```
+``` title="Gestion de module de plateforme sécurisée"
+tpm.msc
+```
+``` title="Gestion des disques"
+diskmgmt.msc
+```
+``` title="Gestion des imprimantes"
+printmanagement.msc
+```
+``` title="Gestionnaire de périphériques"
+devmgmt.msc
+```
+``` title="Gestionnaire de périphériques"
+hdwwiz.cpl
+```
+``` title="Gestionnaire de tâches"
+taskmgr
+```
+``` title="Gestionnaire du vérificateur de pilote"
+verifier
+```
+``` title="Gestionnaires de tâches"
+launchtm
+```
+``` title="Gérer le matériel du module de plateforme sécurisée (TPM)"
+TpmInit
+```
+``` title="Historique des fichiers"
+filehistory
+```
+``` title="Importer des contacts dans Windows"
+wabmig
+```
+``` title="Informations système"
+msinfo32
+```
+``` title="Installation de pack de langage"
+lpksetup
+```
+``` title="Installer un programme à partir du réseau"
+control appwiz.cpl,,1
+```
+``` title="Interface utilisateur de l'imprimante"
+printui
+```
+``` title="Internet Explorer"
+iexplore
+```
+``` title="Jeu de stratégie résultant"
+rsop.msc
+```
+``` title="Lecteur Windows Media"
+dvdplay
+```
+``` title="Lisibilité de l'écran"
+utilman
+```
+``` title="Migration d'imprimante"
+printbrmui
+```
+``` title="Migration de ccontenus protégés"
+dpapimig
+```
+``` title="Mixeur de volume"
+sndvol
+```
+``` title="Modem et Téléphone"
+telephon.cpl
+```
+``` title="Modifier l'affichage sur plusieurs écrans"
+displayswitch
+```
+``` title="Moniteur de ressource"
+resmon
+```
+``` title="Moniteur de ressources"
+perfmon /res
+```
+``` title="Narrateur"
+narrator
+```
+``` title="Nettoyage de disque"
+cleanmgr
+```
+``` title="Notepad"
+notepad
+```
+``` title="Observateur d'évènements"
+eventvwr.msc
+```
+``` title="Option d'arrêt"
+bootim
+```
+``` title="Options d'alimentation"
+powercfg.cpl
+```
+``` title="Options d'ergonomie"
+control access.cpl
+```
+``` title="Options de l'explorateur de fichiers"
+control folders
+```
+``` title="Options de performance"
+systempropertiesperformance
+```
+``` title="Options de personnalisation"
+control color
+```
+``` title="Options de personnalisation"
+control desktop
+```
+``` title="Options Internet"
+inetcpl.cpl
+```
+``` title="Outil capture"
+snippingtool
+```
+``` title="Outil de calibration"
+tabcal
+```
+``` title="Outil de diagnostique Microsoft"
+msdt
+```
+``` title="Outils d'administration	control "
+dmintools
+```
+``` title="Ouvre l'application mail définie par défaut"
+mailto:
+```
+``` title="Ouvre l'interface d'arrêt à distance"
+shutdown -i
+```
+``` title="Ouvre le dossier contacts"
+wab
+```
+``` title="Ouvrir l'invite de commande"
+cmd
+```
+``` title="Ouvrir l'outil de résolution des problèmes"
+control.exe /name Microsoft.Troubleshooting
+```
+``` title="Ouvrir la corbeille"
+shell:recyclebinfolder
+```
+``` title="Ouvrir le dossier documents"
+documents
+```
+``` title="Ouvrir le dossier favoris"
+favorites
+```
+``` title="Ouvrir le dossier photos"
+pictures
+```
+``` title="Ouvrir le dossier vidéos"
+videos
+```
+``` title="Ouvrir les dossier téléchargements"
+downloads
+```
+``` title="Ouvrir les fichiers récents"
+recent
+```
+``` title="Ouvrir les paramètres de barre des tâches"
+control.exe /name Microsoft.TaskbarandStartMenu
+```
+``` title="Ouvrir Windows CardSpace"
+control.exe /name Microsoft.cardspace
+```
+``` title="Ouvrir Windows Sideshow"
+control.exe /name Microsoft.WindowsSideshow
+```
+``` title="Paint"
+mspaint
+```
+``` title="Paint"
+pbrush
+```
+``` title="Panneau de configuration"
+control
+```
+``` title="Panneau de saisie pour les mathématiques"
+mip
+```
+``` title="Paramètres d'affichage"
+dpiscaling
+```
+``` title="Paramètres de contrôle de compte d'utilisateur (UAC)"
+useraccountcontrolsettings
+```
+``` title="Paramètres de présentation"
+presentationsettings
+```
+``` title="Paramètres de Windows Script Host"
+wscript
+```
+``` title="Paramètres des couleurs"
+colorcpl
+```
+``` title="Pare-feu Windows Defender"
+firewall.cpl
+```
+``` title="Personnes à proximité"
+collab.cpl
+```
+``` title="Planificateur de tâches"
+taskschd.msc
+```
+``` title="Planificateur de tâches"
+control schedtasks
+```
+``` title="Polices"
+fontview
+```
+``` title="Polices"
+control fonts
+```
+``` title="Programme d'installation de Windows Update en mode autonome"
+wusa
+```
+``` title="Programmes et fonctionnalités"
+appwiz.cpl
+```
+``` title="Propriété de la souris"
+main.cpl
+```
+``` title="Propriétés de la souris	"
+control mouse
+```
+``` title="Propriétés du clavier"
+control keyboard
+```
+``` title="Propriétés protection du système"
+systempropertiesprotection
+```
+``` title="Propriétés système"
+sysdm.cpl
+```
+``` title="Propriétés système avancées"
+systempropertiesadvanced
+```
+``` title="Propriétés système matériel"
+systempropertieshardware
+```
+``` title="Propriétés système ordinateur"
+systempropertiescomputername
+```
+``` title="Propriétés système utilisation à distance"
+systempropertiesremote
+```
+``` title="Prévention de l'exécution des données"
+systempropertiesdataexecutionprevention
+```
+``` title="Périphériques et imprimantes"
+control printers
+```
+``` title="Register Server (OLE)"
+regsvr32
+```
+``` title="Restauration système"
+rstrui
+```
+``` title="Région et Langue"
+intl.cpl
+```
+``` title="Réinitialiser Windows"
+systemreset
+```
+``` title="Résolution d'écran"
+desk.cpl
+```
+``` title="Sauvegarder et restaurer des fichiers Windows"
+sdclt
+```
+``` title="Sauvegarder les bases de données utilisateurs et mots de passe"
+credwiz
+```
+``` title="Se connecter à un réseau distant (ex VPN)"
+rasphone
+```
+``` title="Se déconnecter"
+logoff
+```
+``` title="Services"
+services.msc
+```
+``` title="Services des composants"
+comexp.msc
+```
+``` title="Services des composants"
+dcomcnfg
+```
+``` title="Son"
+mmsys.cpl
+```
+``` title="Stratégie de sécurité locale"
+secpol.msc
+```
+``` title="Stylet et fonction tactile"
+tabletpc.cpl
+```
+``` title="Système de fichier EFS"
+rekeywiz
+```
+``` title="Sécurité et maintenance"
+wscui.cpl
+```
+``` title="Table des caractères"
+charmap
+```
+``` title="Testeur WMI"
+wbemtest
+```
+``` title="Transfert de fichiers Bluetooth"
+fsquirt
+```
+``` title="Télécopie et numérisation Windows"
+wfs
+```
+``` title="Téléphone"
+dialer
+```
+``` title="Utilisateurs et goupes locaux"
+lusrmgr.msc
+```
+``` title="Version de Windows"
+winver
+```
+``` title="Vérification des signatures de fichiers"
+sigverif
+```
+``` title="Windows Disc Image Burning Tool"
+isoburn
+```
+``` title="Windows Explorer"
+explorer
+```
+``` title="Windows Firewall avec sécurité avancée"
+wf.msc
+```
+``` title="Windows Media Player"
+wmplayer
+```
+``` title="Windows PowerShell"
+powershell
+```
+``` title="Windows PowerShell ISE"
+powershell_ise
+```
+``` title="Windows Update"
+wuapp
+```
+``` title="WordPad"
+write
+```
+``` title="Wordpad"
+wordpad
+```
+``` title="XPS Viewer"
+xpsrchvw
+```

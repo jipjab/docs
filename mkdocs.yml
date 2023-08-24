@@ -83,4 +83,5 @@ nav:
         - 'MDE': 'MDE.md'
         - 'Intune': 'Intune.md'
         - 'kql': 'kql.md'
+        - 'Commands': 'commands.md'
     - Cybereason: 'Cybereason.md'

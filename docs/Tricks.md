@@ -184,3 +184,8 @@ Connect-MgGraph -TenantId "yourTenant GUID"
 
 ## Restrict creation of teams
 https://techlabs.blog/categories/office-365/stop-users-from-being-able-to-create-microsoft-teams
+
+## Test Viruses and Antiviruses
+```powershell title="Mimikatz"
+invoke-mimikatz
+``` 
