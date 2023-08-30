@@ -1,4 +1,6 @@
 # Creation d'un tenant microsoft
+## Azure Basics
+![Disable Security Defaults in Portal Azure AD](img/Azure-Management-Scope.png){ width="800" }
 ## Pre-requis
 ## Ensure Security Defaults is disabled on Azure Active Directory
 Par défaut, Microsoft active les paramètres de sécurité par défaut. L'objectif est de s'assurer que toutes les organisations disposent d'un niveau de sécurité de base.

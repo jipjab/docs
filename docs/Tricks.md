@@ -189,3 +189,27 @@ https://techlabs.blog/categories/office-365/stop-users-from-being-able-to-create
 ```powershell title="Mimikatz"
 invoke-mimikatz
 ``` 
+## Check Installed application
+```powershell title="Powershell Check installed applications"
+wmic product get name,vendor,IdentifyingNumber,Version,InstallDate
+```
+## Check running services
+```powershell title="powershell check running services"
+wmic service get Caption,StartName,StartMode
+```
+## check installed drivers
+```powershell title="Check installed drivers"
+driverquery /v
+```
+## check routes
+```powershell title="Check routes"
+route print
+```
+## check tasks
+```powershell title="Check computer tasks"
+tasklist
+```
+## Check Boot time
+```powershell title="Check Boot time"
+systeminfo | find "System Boot Time:"
+```
