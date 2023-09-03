@@ -117,4 +117,29 @@ catch {
     #Exit 1  
 }  
 ```
+## Azure Dynamic Groups
+``` title="To create a group that includes all your devices enrolled via Autopilot"
+(device.devicePhysicalIDs -any _ -contains “[ZTDId]”)
+```
+``` title="To create a group for Windows Corporate devices enrolled via Autopilot"
+(device.devicePhysicalIds -any _ -contains “[ZTDId]”) and (device.deviceOSType -contains “Windows”) and (device.deviceOwnership -contains “Company”)
+```
 
+## Azure Local users
+### OMA-URI 1
+``` title="Local Admin"
+Name - Local Admin
+Description - Set Local Admin
+OMA-URI - ./Device/Vendor/MSFT/Accounts/Users/rahuljindallocaladmin/LocalUserGroup
+Data Type - Interger
+Value - 2
+```
+### OMA-URI 2
+``` title="Local Admin Password"
+Name - Local Admin Password
+Description - Set Local Admin Password
+OMA-URI - ./Device/Vendor/MSFT/Accounts/Users/rahuljindallocaladmin/Password
+Data Type - String
+Value - P@55w0rd
+````
+https://rahuljindalmyit.blogspot.com/2021/05/intune-different-ways-of-setting-local.html
