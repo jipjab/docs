@@ -39,10 +39,10 @@ under Delegation > Advanced >
 
 3. [Download latest MDE platform update](https://definitionupdates.microsoft.com/download/DefinitionUpdates/Platform/4.18.23050.5/x64/UpdatePlatform.exe)
 
-
 4. Run helper script to onboard
+```powershell
 .\Install.ps1 -UI -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd"
-
+```
 
 Pour le script onboarding il faut prendre la version pour les GPO car elle n'est pas interactive
 
@@ -62,3 +62,48 @@ Double-click the "Turn off Microsoft Defender Antivirus" policy.
 Registry key : Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging
 Registry key value (REG_SZ) : Group
 Registry key data : Servers
+
+## Get Exclusions
+```powershell
+function Get-Exclusions {
+    $Prefs = Get-MpPreference
+    $Prefs.ExclusionExtension | ForEach-Object { [PSCustomObject]@{ Item = $_; Type = "Extension" } }
+    $Prefs.ExclusionProcess | ForEach-Object { [PSCustomObject]@{ Item = $_; Type = "Process" } }
+    $Prefs.ExclusionPath | ForEach-Object { [PSCustomObject]@{ Item = $_; Type = "Path" } }
+    $Prefs.ExclusionIpAddress | ForEach-Object { [PSCustomObject]@{ Item = $_; Type = "IpAddress" } }
+}
+
+Get-Exclusions | ConvertTo-Csv -NoTypeInformation
+```
+
+## Get ASR Status
+```powershell
+<#
+    Outputs Attack Surface Reduction rule status
+#>
+
+function Get-AttackSurfaceReductionRuleStatus {
+
+    function Get-AsrStatus ($Value) {
+        switch ($Value) {
+            0 { "Disabled" }
+            1 { "Enabled" }
+            2 { "Audit" }
+            default { "Not configured" }
+        }
+    }
+
+    $Prefs = Get-MpPreference
+    if ($null -eq $Prefs.AttackSurfaceReductionRules_Ids) {
+        Write-Host "ASR rules not configured."
+    }
+    else {
+        for ($i = 0; $i -le ($Prefs.AttackSurfaceReductionRules_Ids.Count - 1); $i++) {
+            [PSCustomObject]@{
+                RuleId = $Prefs.AttackSurfaceReductionRules_Ids[$i]
+                Status = Get-AsrStatus -Value $Prefs.AttackSurfaceReductionRules_Actions[$i]
+            }
+        }
+    }
+}
+```
