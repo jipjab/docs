@@ -15,6 +15,11 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
 ```powershell title="Register the device"
 Get-WindowsAutopilotInfo -Online
 ```
+```powershell title="Full script"
+Install-Script -name Get-WindowsAutopilotInfo -Force
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+Get-WindowsAutopilotInfo -Online
+```
 > References:</br>
 [Manually register devices with Windows Autopilot | Microsoft Learn](https://learn.microsoft.com/en-us/mem/autopilot/add-devices)</br>
 
