@@ -124,7 +124,7 @@ catch {
 ```
 ## Azure Dynamic Groups
 ``` title="To create a group that includes all your devices enrolled via Autopilot"
-(device.devicePhysicalIDs -any _ -contains “[ZTDId]”)
+(device.devicePhysicalIDs -any (_ -contains "[ZTDID]"))
 ```
 ``` title="To create a group for Windows Corporate devices enrolled via Autopilot"
 (device.devicePhysicalIds -any _ -contains “[ZTDId]”) and (device.deviceOSType -contains “Windows”) and (device.deviceOwnership -contains “Company”)
