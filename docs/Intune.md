@@ -130,6 +130,7 @@ catch {
 (device.devicePhysicalIds -any _ -contains “[ZTDId]”) and (device.deviceOSType -contains “Windows”) and (device.deviceOwnership -contains “Company”)
 ```
 
+
 ## Azure Local users
 ### OMA-URI 1
 ``` title="Local Admin"

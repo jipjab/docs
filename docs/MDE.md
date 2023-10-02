@@ -107,3 +107,15 @@ function Get-AttackSurfaceReductionRuleStatus {
     }
 }
 ```
+
+## Check if Defender EDR is activated
+### On servers SENSE must be started
+When the SENSE service starts for the first time, it writes onboarding status to the registry location
+```
+HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status
+SENSE service onboarding status isn't set to 1
+```
+Source: https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/troubleshoot-onboarding?view=o365-worldwide
+
+## Verify client connectivity to Microsoft Defender for Endpoint service URLs
+https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-proxy-internet?view=o365-worldwide#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls
