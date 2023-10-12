@@ -54,7 +54,6 @@ sc config WinDefend start=disabled
 
 Browse the following path: Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus
 Double-click the "Turn off Microsoft Defender Antivirus" policy.
-![Disable MDE by GPO 01](img/mde/SCR-20230717-rz0.png)
 ![Disable MDE by GPO 02](img/mde/SCR-20230802-mli.png)
 
 ## Add MDE tags on devices through GPO
