@@ -83,7 +83,7 @@ nav:
         - 'MDE': 'MDE.md'
         - 'Intune': 'Intune.md'
         - 'kql': 'kql.md'
-    - Commands: 'commands.md'
+    - Commands:
         - 'Commands': 'commands.md'
         - 'Scripts-Checks': 'FileCheck.md'
     - Cybereason: 'Cybereason.md'

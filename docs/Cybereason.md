@@ -1,7 +1,7 @@
 # Cybereason
 
 1. L’Antivirus
-- Il est construit à partir de deux modules précis : un engin et une bibliothèque de définition. 
+Il est construit à partir de deux modules précis : un engin et une bibliothèque de définition. 
 - Tout d’abord, l’engin vérifie chaque fichier de votre appareil et il compare les codes de chacun d’entre eux avec ceux de la bibliothèque de signature. Ensuite, lorsqu’un fichier est identifié comme étant dangereux, il est placé en quarantaine et est isolé du système d’exploitation. 
 - Si l’antivirus connait la méthode de nettoyage, il l’exécutera. Dans le cas contraire, il lancera une alerte afin que l’utilisateur puisse intervenir.
 
