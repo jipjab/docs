@@ -118,3 +118,22 @@ Source: https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoi
 
 ## Verify client connectivity to Microsoft Defender for Endpoint service URLs
 https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-proxy-internet?view=o365-worldwide#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls
+
+## MDE commands
+
+```powershell title="MDE change comands"
+Set-MpPreference -DisableRealtimeMonitoring $false
+Set-MpPreference -DisableIOAVProtection $false
+New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender" -Name "Real-Time Protection" -Force
+New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" -Name "DisableBehaviorMonitoring" -Value 0 -PropertyType DWORD -Force
+New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" -Name "DisableOnAccessProtection" -Value 0 -PropertyType DWORD -Force
+New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" -Name "DisableScanOnRealtimeEnable" -Value 0 -PropertyType DWORD -Force
+New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender" -Name "DisableAntiSpyware" -Value 0 -PropertyType DWORD -Force
+start-service WinDefend
+start-service WdNisSvc
+
+New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender" -Name "DisableAntiSpyware" -Force -Value 1 -PropertyType DWORD -Force
+New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware" -Name "DisableBehaviorMonitoring" -Value 0 -PropertyType DWORD -Force
+
+Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender" -Name "DisableAntiSpyware" -Force
+```
