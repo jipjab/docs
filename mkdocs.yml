@@ -78,10 +78,12 @@ nav:
     #- Controles CIS:
     #    - 'M365/AAD': 'Controles-CIS.md'
     - Microsoft:
-        - 'Azure Security Best Practices': 'Azure.md'
+        - 'Az. Security Best Practices': 'Azure.md'
         - 'Windows Group Policies': 'GPOs.md'
         - 'MDE': 'MDE.md'
         - 'Intune': 'Intune.md'
         - 'kql': 'kql.md'
+    - Commands: 'commands.md'
         - 'Commands': 'commands.md'
+        - 'Scripts-Checks': 'FileCheck.md'
     - Cybereason: 'Cybereason.md'
