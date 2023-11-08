@@ -5,7 +5,7 @@
 - Tout d’abord, l’engin vérifie chaque fichier de votre appareil et il compare les codes de chacun d’entre eux avec ceux de la bibliothèque de signature. Ensuite, lorsqu’un fichier est identifié comme étant dangereux, il est placé en quarantaine et est isolé du système d’exploitation. 
 - Si l’antivirus connait la méthode de nettoyage, il l’exécutera. Dans le cas contraire, il lancera une alerte afin que l’utilisateur puisse intervenir.
 
-2. Endpoint Detection & Response (EDR)
+2. Endpoint Detection & Response (EDR):
 - Contrairement à l’antivirus, l’EDR effectue une analyse comportementale des menaces. 
 - Il analyse l’exécution et il détermine s’il s’agit d’une menace. Toutefois, cette opération n’est pas basée sur une bibliothèque préalablement installée, mais plutôt sur l’incidence que le code aura sur votre appareil et ce, peu importe le type!
 - Ajoute une corrélation entre les événements de sécurité en arrière-plan et l’intelligence artificielle afin de traiter les grands nombres de signaux.
