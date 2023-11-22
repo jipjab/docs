@@ -21,3 +21,11 @@ asd
 
 ## Services Cybereason
 ![Cybereason-NGAV-TaskManager](img/cybereason/Cybereason-NGAV.png)
+
+```powershell title="Uninstall Cybereason"
+CybereasonSensor64_18_1_102_443_ACTIVE_NORMAL.exe /uninstall /quiet -l C:\Temp\CybereasonInstall.log AP_UNINSTALL_CODE="9bmNs08*9Iuo^Rrz"
+```
+
+```powershell title="Upgrade Cybereason"
+CybereasonSensor64_18_1_102_443_ACTIVE_NORMAL.exe AP_UNINSTALL_CODE="9xxxx"
+```
