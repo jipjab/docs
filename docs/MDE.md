@@ -137,3 +137,13 @@ New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Disab
 
 Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender" -Name "DisableAntiSpyware" -Force
 ```
+
+````powershell title="MDE PowerShell Commands:" 
+get-mpcomputerstatus
+get-mpthreat
+get-mpthreatdetection
+Set-MpPreference -DisableRealtimeMonitoring $true
+Add-MpPreference -ExclusionPath "c:\ADAMDEMO"
+Update-mpsignature
+Start-mpscan 
+```

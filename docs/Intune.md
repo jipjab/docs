@@ -129,8 +129,18 @@ catch {
 ``` title="To create a group for Windows Corporate devices enrolled via Autopilot"
 (device.devicePhysicalIds -any _ -contains “[ZTDId]”) and (device.deviceOSType -contains “Windows”) and (device.deviceOwnership -contains “Company”)
 ```
-## Most common Intune/azure AD Groups
-AR_Company_Windows_Corp_Devices
+## Group naming conventions (AD, AAD, 365)
+
+```
+Distribution groups
+DL_<COMPANYPREFIX>_<ROLE>
+```
+```
+Security groups
+SG_AR_<COMPANYPREFIX>_<OS>_<USER or DEVICES>_<ROLE>
+```
+
+SG_AR_Company_Windows_Corp_Devices
 Toutes les machines corporate Windows
 
 AR_Company_MacOS_Corp_Devices

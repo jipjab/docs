@@ -13,5 +13,3 @@ Il faut utiliser des filtres WMI
 
 [filtres WMI](https://learn.microsoft.com/en-us/windows/security/operating-system-security/network-security/windows-firewall/create-wmi-filters-for-the-gpo)
 
-
-
