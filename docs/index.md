@@ -14,8 +14,6 @@ hide:
 * `Personal projects` - Ideas and ongoing projects
 * `Microsoft Azure`
 * `Microsoft EndPoint (Intune)` - Autopilote, Patch management,..
-* `Microsoft Defender for EndPoints`
-* `Microsoft Defender for Servers` - Cloud
-* `Microsoft Defender for Office`
+* `Microsoft Defender`
 * `Cybereason` - NGAV, EDR, MDR & XDR
 * `Kaspersky`
