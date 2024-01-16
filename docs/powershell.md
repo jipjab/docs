@@ -1,6 +1,6 @@
 # Connect on Exchange On-line (Mac)
 
-```ps title="install powershell on a mac"
+```zsh title="install powershell on a mac"
 brew install powershell
 brew install openssl
 pwsh
@@ -9,10 +9,10 @@ Install-Module -Name PSWSMan
 sudo pwsh -Command 'Install-WSMan'
 ```
 
-```ps title="connect with a mac with an interactive logon"
+```powershell title="connect with a mac with an interactive logon"
 $ExchangeSession = Connect-ExchangeOnline
 ```
-```ps title="Change calendar time zone"
+```powershell title="Change calendar time zone"
 Set-MailboxCalendarConfiguration -Identity peter@contoso.com -WorkingHoursTimeZone "Pacific Standard Time"
 ```
 
