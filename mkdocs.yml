@@ -80,11 +80,11 @@ nav:
     - Microsoft:
         - 'Az. Security Best Practices': 'Azure.md'
         - 'Windows Group Policies': 'GPOs.md'
-        - 'MDE': 'MDE.md'
         - 'Intune': 'Intune.md'
         - 'kql': 'kql.md'
     - Commands:
         - 'Standard': 'commands.md'
         - 'Scripts-Checks': 'FileCheck.md'
         - 'Powershell' : 'powershell.md'
+    - MDE: 'MDE.md'
     - Cybereason: 'Cybereason.md'
