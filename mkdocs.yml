@@ -83,6 +83,7 @@ nav:
         - 'MDE': 'MDE.md'
         - 'Intune': 'Intune.md'
         - 'kql': 'kql.md'
+        - 'Powershell' : 'powershell.md'
     - Commands:
         - 'Commands': 'commands.md'
         - 'Scripts-Checks': 'FileCheck.md'

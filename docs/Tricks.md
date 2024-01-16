@@ -144,10 +144,6 @@ netdom query fsmo
 
 [More explainations](https://www.petenetlive.com/KB/Article/0000240){ width="500" }
 
-## Powershell, How to get date of last Windows update install or at least checked for an update?
-```powershell
-gwmi win32_quickfixengineering |sort installedon -desc 
-```
 
 ## Intune registration troubleshooting
 
@@ -171,45 +167,6 @@ Windows server 2012r2 MDE enrollment status: AAD Connect misconfiguration: **AAD
 
 Check if the service 
 
-## COnnect on Microsoft Graph with powershell
-
-```powershell title="Install the module"
-Install-Module Microsoft.Graph -Scope AllUsers   
-Connect-MgGraph -TenantId "yourTenant GUID"
-```
-```powershell title="Connect"
-Install-Module Microsoft.Graph -Scope AllUsers   
-Connect-MgGraph -TenantId "yourTenant GUID"
-```
-
 ## Restrict creation of teams
 https://techlabs.blog/categories/office-365/stop-users-from-being-able-to-create-microsoft-teams
 
-## Test Viruses and Antiviruses
-```powershell title="Mimikatz"
-invoke-mimikatz
-``` 
-## Check Installed application
-```powershell title="Powershell Check installed applications"
-wmic product get name,vendor,IdentifyingNumber,Version,InstallDate
-```
-## Check running services
-```powershell title="powershell check running services"
-wmic service get Caption,StartName,StartMode
-```
-## check installed drivers
-```powershell title="Check installed drivers"
-driverquery /v
-```
-## check routes
-```powershell title="Check routes"
-route print
-```
-## check tasks
-```powershell title="Check computer tasks"
-tasklist
-```
-## Check Boot time
-```powershell title="Check Boot time"
-systeminfo | find "System Boot Time:"
-```
