@@ -38,6 +38,7 @@ www.microsoft.com/pki/*
 uk-v20.events.data.microsoft.com or *.events.data.microsoft.com
 
 ## Add Microsoft Defender for Endpoint to the exclusion list for your existing solution
+
 ```title=Windows 11 exclusions
 C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe
 C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe
