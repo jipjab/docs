@@ -1,9 +1,26 @@
 # Microsft Defender for Endpoints
-
 1. Make sure "Turn Off Microsoft Defender" Policy is not activated (its a GPO). It should be set to NOT configured or Disabled
 2. Onboarding
 3. Active/Passive
 4. Intelligence update
+
+## Phases de deploiements:
+Étape 1 : Configurer Microsoft Defender pour point de terminaison déploiement : cette étape se concentre sur la préparation de votre environnement pour le déploiement.:
+- Vérifier l’état de la licence
+- Emplacement du centre de données
+- Configuration réseau
+
+Étape 2 : Attribuer des rôles et des autorisations : identifiez et attribuez des rôles et des autorisations pour afficher et gérer Defender pour point de terminaison.
+
+Étape 3 - Configurer les fonctionnalités : Vous êtes maintenant prêt à configurer les fonctionnalités de sécurité de Defender pour point de terminaison pour protéger vos appareils.
+
+Étape 4 : Identifier votre architecture et choisir votre méthode de déploiement : identifiez votre architecture et la méthode de déploiement qui convient le mieux à votre organization.
+
+Étape 5 - Intégrer des appareils : évaluez et intégrez vos appareils à Defender pour point de terminaison:
+- Évaluation: identifiez 50 appareils à intégrer au service à des fins de test.
+- Pilote: intégrez les 50 à 100 points de terminaison suivants dans un environnement de production.
+- Exécuter une simulation: https://learn.microsoft.com/fr-fr/microsoft-365/security/defender-endpoint/attack-simulations?view=o365-worldwide#run-a-simulation
+- Déploiement complet: déployer le service dans le reste de l’environnement par incréments plus importants
 
 ## Pre-requists
 [Run the client analyzer on Windows](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/run-analyzer-windows?view=o365-worldwide)
@@ -19,6 +36,31 @@ crl.microsoft.com
 www.microsoft.com/pkiops/*
 www.microsoft.com/pki/*
 uk-v20.events.data.microsoft.com or *.events.data.microsoft.com
+
+## Add Microsoft Defender for Endpoint to the exclusion list for your existing solution
+```title=Windows 11 exclusions
+C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseCM.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseNdr.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseSC.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\Classification\SenseCE.exe
+C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\DataCollection
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseTVM.exe
+```
+
+```title=Windows Servers 2012R2, 2016, 2019, 2022 exclusions
+C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\MsSense.exe
+C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCnCProxy.exe
+C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseIR.exe
+C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCE.exe
+C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseSampleUploader.exe
+C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCM.exe
+C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\DataCollection
+C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseTVM.exe
+```
 
 ## Check if the device has already been already downloaded
 Check if "Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Advanced Threat Protection" has subfolders
