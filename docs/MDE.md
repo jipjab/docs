@@ -39,7 +39,7 @@ uk-v20.events.data.microsoft.com or *.events.data.microsoft.com
 
 ## Add Microsoft Defender for Endpoint to the exclusion list for your existing solution
 
-```title=Windows 11 exclusions
+```title="Windows 11 exclusions"
 C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe
 C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe
 C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe
@@ -52,7 +52,7 @@ C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\DataCollect
 C:\Program Files\Windows Defender Advanced Threat Protection\SenseTVM.exe
 ```
 
-```title=Windows Servers 2012R2, 2016, 2019, 2022 exclusions
+```title="Windows Servers 2012R2, 2016, 2019, 2022 exclusions"
 C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\MsSense.exe
 C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCnCProxy.exe
 C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseIR.exe
