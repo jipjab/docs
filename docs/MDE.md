@@ -1,9 +1,10 @@
 # Microsft Defender for Endpoints
+{==
 1. Make sure "Turn Off Microsoft Defender" Policy is not activated (its a GPO). It should be set to NOT configured or Disabled
 2. Onboarding
 3. Active/Passive
 4. Intelligence update
-
+==}
 ## Phases de deploiements:
 Étape 1 : Configurer Microsoft Defender pour point de terminaison déploiement : cette étape se concentre sur la préparation de votre environnement pour le déploiement.:
 - Vérifier l’état de la licence
