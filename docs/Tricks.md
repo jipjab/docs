@@ -169,4 +169,3 @@ Check if the service
 
 ## Restrict creation of teams
 https://techlabs.blog/categories/office-365/stop-users-from-being-able-to-create-microsoft-teams
-
