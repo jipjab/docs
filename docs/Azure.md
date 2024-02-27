@@ -201,3 +201,13 @@ L’application de ce paramètre impacte les services suivants :
 - Visual Studio subscriptions administrator portal
 - Microsoft IoT Central
 
+## Compte Brise glace Azure
+Le rôle d'administrateur global doit être attribué de façon permanente.
+Le mot de passe ne doit pas expirer.
+MFA ne doit pas être activé sur ce compte.
+Le compte doit être exclu de TOUTES les politiques d'accès conditionnel.
+Il ne doit pas être assigné à une personne en particulier.
+Ce compte ne doit servir que pour le cloud.
+Il faut utiliser le domaine du tenant par défaut « onmicrosoft.com » (pour éviter tous les problèmes de domaine et de fédération).
+Il ne doit donc pas être fédéré ni synchronisé avec l’AD on-premises.
+Ce compte ne doit pas être associé à des téléphones mobiles ou des jetons matériels fournis par les employés.
