@@ -191,3 +191,55 @@ Data Type - String
 Value - P@55w0rd
 ````
 https://rahuljindalmyit.blogspot.com/2021/05/intune-different-ways-of-setting-local.html
+
+## Device queries
+All Company owned devices	(device.deviceOwnership -eq “Company”)	
+All personally owned devices	(device.deviceOwnership -eq “Personal”)	
+All devices not managed by a MDM	(device.managementType -ne “MDM”)	
+All devices managed by a MDM	(device.managementType -eq “MDM”)	
+All devices managed by SCCM 	(device.deviceManagementAppId -eq “54b943f8-d761-4f8d-951e-9cea1846db5a”)	
+All devices managed by Intune	(device.deviceManagementAppId -eq “0000000a-0000-0000-c000-000000000000”)	
+All devices from AD	device.deviceTrustType -eq “ServerAd”	
+All devices from Azure AD	(device.deviceTrustType -eq “AzureAd”)	
+All devices not joined to AAD or AD	(device.deviceTrustType -eq “Workplace”)	
+		
+## Windows		
+All Windows Devices	(device.deviceOSType -match “Windows”)	
+All company owned Windows devices	(device.deviceOSType -eq “Windows”) -and (device.deviceOwnership -eq “Company”)	
+All personally owned Windows devices	(device.deviceOSType -eq “Windows”) -and (device.deviceOwnership -eq “Personal”)	
+All Windows virtual machines	(device.deviceModel -eq “Virtual Machine”)	
+		
+## Android		
+All Android devices	(device.deviceOSType -match “Android”)	
+All company owned Android devices	(device.deviceOSType -eq “Android”) -and (device.deviceOwnership -eq “Company”)	
+All personally owned Android devices	(device.deviceOSType -eq “Windows”) -and (device.deviceOwnership -eq “Personal”)	
+All Android Enterprise devices	(device.deviceOSType -match “AndroidEnterprise”)	
+All company owned Android Enterprise devices	(device.deviceOSType -eq “AndroidEnterprise”) -and (device.deviceOwnership -eq “Company”)	
+All Android devices enrolled with a specific profile name	(device.enrollmentProfileName -contains “Dedicated”)	Update the rule with the same name you gave your enrollment profile
+
+## iOS		
+All iPads devices	(device.deviceOSType -eq “iPad”)	
+All personally owned iPad devices	(device.deviceOSType -eq “iPad”) -and (device.deviceOwnership -eq “Personal”)	
+All Company owned iPad devices	(device.deviceOSType -eq “iPad”) -and (device.deviceOwnership -eq “Company”)	
+All iPhones devices	(device.deviceOSType -eq “IPhone”)	
+All personally owned iPhone devices	(device.deviceOSType -eq “IPhone”) -and (device.deviceOwnership -eq “Personal”)	
+All Company owned iPhone devices	(device.deviceOSType -eq “IPhone”) -and (device.deviceOwnership -eq “Company”)	
+
+## macOS		
+All Mac devices	(device.deviceOSType -eq “MacMDM”)	
+All Company owned Mac devices	(device.deviceOSType -eq “MacMDM”) -and (device.deviceOwnership -eq “Company”)	
+
+## Device Queries for Autopilot
+All Autopilot registered devices	(device.devicePhysicalIDs -any _ -contains “[ZTDId]”)	
+A specific device thats autopilot registered	(device.devicePhysicalIDs -contains “[ZTDId]:6598-3522-5834-2658-4381-8581-32”)	If you want to create a dynamic group only containing one specific device you can specify the ZTDid for that device.
+Autopilot devices with a specific OrderID (Group Tag)	(device.devicePhysicalIds -any _ -eq “[OrderID]:SelfDeploying”)	
+Autopilot devices that have been enrolled using a specific enrollment profile	(device.enrollmentProfileName -eq “APHybridJoin”)	Name of the Autopilot enrollment profile.
+		
+## User queries
+All Users with EMS assigned and enabled	user.assignedPlans -any (assignedPlan.service -eq “SCO” -and assignedPlan.capabilityStatus -eq “Enabled”)	
+All users with an AAD enabled account	(user.accountEnabled -eq True)	
+All users with an email that contains .com	(user.mail -contains “.com”)	
+All Users with a Intune license thats not disabled. 	USER.ASSIGNEDPLANS -ANY (ASSIGNEDPLAN.SERVICEPLANID -EQ “c1ec4a95-1f05-45b3-a911-aa3fa01094f5” -and assignedPlan.capabilityStatus -ne “Disabled”)	
+All users with Yammer Enterprise license assigned and enabled. 	user.assignedPlans -any (assignedPlan.service -eq “YammerEnterprise” -and assignedPlan.capabilityStatus -eq “Enabled”)	
+All users with MicrosoftPrint license assigned and enabled. 	user.assignedPlans -any (assignedPlan.service -eq “MicrosoftPrint” -and assignedPlan.capabilityStatus -eq “Enabled”)	
+All guest users in AAD	(user.userType -eq “Guest”)	Users created in AAD or AD are “Members” and all users you invited in to your tenant are labeled as “Guest” 
