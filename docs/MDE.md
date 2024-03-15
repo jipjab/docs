@@ -190,3 +190,6 @@ Add-MpPreference -ExclusionPath "c:\ADAMDEMO"
 Update-mpsignature
 Start-mpscan 
 ```
+
+GPO to enroll MDE
+
