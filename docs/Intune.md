@@ -49,6 +49,52 @@ catch {
 } 
 ```
 
+# Forticlient package
+```powershell
+# Name of the executable file
+$ExecName =  "FortiClientVPNSetup_7.2.4.0972_x64.exe"
+
+# Get the directory path of the current script
+$scriptPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
+
+# Define the path to the executable file
+$executablePath = Join-Path -Path $scriptPath -ChildPath $ExecName
+
+# Check if the executable file exists
+if (Test-Path $executablePath -PathType Leaf) {
+    # Execute the executable file
+    Start-Process -FilePath $executablePath -ArgumentList "/quiet /norestart" -Wait
+} else {
+    Write-Host "Executable file not found at: $executablePath"
+}
+
+# Set VPN server and credentials
+$azureSSOSettings = @{
+    "sso_enabled" = 1
+    "Server" = "myfipoi.fipoi.ch:443"
+}
+
+# Configure Azure SSO settings
+if (Test-Path -LiteralPath $keyPath ) {
+    foreach ($setting in $azureSSOSettings.GetEnumerator()) {
+        Set-ItemProperty -Path $keyPath -Name $setting.Key -Value $setting.Value
+    }
+} else {
+    New-Item -Path $keyPath -Force -ea SilentlyContinue
+    foreach ($setting in $azureSSOSettings.GetEnumerator()) {
+        Set-ItemProperty -Path $keyPath -Name $setting.Key -Value $setting.Value
+    }
+}
+```
+## Local location of a powershell script
+```powershell title="Get the directory path of the current script"
+# Get the directory path of the current script
+$scriptPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
+
+# Define the path to the executable file
+$executablePath = Join-Path -Path $scriptPath -ChildPath $ExecName
+```
+
 ## Proactive Remediations scrips
 ### Adobe
 ```powershell title="DETECTION - Adobe Reader Document Bar for Microsoft AIP"
