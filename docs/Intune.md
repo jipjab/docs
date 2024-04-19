@@ -175,6 +175,12 @@ catch {
 ``` title="To create a group for Windows Corporate devices enrolled via Autopilot"
 (device.devicePhysicalIds -any _ -contains “[ZTDId]”) and (device.deviceOSType -contains “Windows”) and (device.deviceOwnership -contains “Company”)
 ```
+``` title="Microsoft Defender Device Groups"
+(device.managementType -eq “MicrosoftSense”)
+```
+``` title="Microsoft Windows 10 devices"
+(device.deviceOSVersion -startsWith “10.0.1”) -and (device.DeviceOSType -startsWith “Windows”)
+```
 ## Group naming conventions (AD, AAD, 365)
 
 ```

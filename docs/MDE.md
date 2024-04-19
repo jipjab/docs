@@ -181,7 +181,7 @@ New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Disab
 Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender" -Name "DisableAntiSpyware" -Force
 ```
 
-````powershell title="MDE PowerShell Commands:" 
+```powershell title="MDE PowerShell Commands:" 
 get-mpcomputerstatus
 get-mpthreat
 get-mpthreatdetection
@@ -191,5 +191,21 @@ Update-mpsignature
 Start-mpscan 
 ```
 
-GPO to enroll MDE
+```powershell title="To quickly check if the Windows Defender is enabled on your computer and find out when the antivirus definition was last updated:"
+Get-MpComputerStatus | Select-Object -Property Antivirusenabled,AMServiceEnabled,AntispywareEnabled,BehaviorMonitorEnabled,IoavProtectionEnabled,NISEnabled,OnAccessProtectionEnabled,RealTimeProtectionEnabled,IsTamperProtected,AntivirusSignatureLastUpdated
+```
 
+## Arreter les Scan MDE Defender
+
+1. Passer le serveur en mode **TroubleShoot**
+2. Désactiver le Tamper Protection
+```powershell title="Désactiver le Tamper Protection sur la machine"
+PS C:\Users\admjpm> Set-MpPreference -DisableTamperProtection $true
+```
+3. Arreter les scans
+```powershell title="arreter les scans"
+PS C:\Users\admjpm> cd "C:\Program Files\Windows Defender"
+PS C:\Program Files\Windows Defender> .\MpCmdRun.exe -scan -cancel
+Argument -cancel detected. Trying to cancel any quick/full scan in progress...
+Scan cancelled successfully.
+```

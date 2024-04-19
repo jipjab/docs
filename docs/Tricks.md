@@ -14,6 +14,10 @@ gpresult /R > c:\RsopReport.txt
 ```cmd title="Machine scope (needs to be admin and can be a remote machine)"
 gpresult/r /scope computer
 ```
+
+```cmd title="use RSOP.msc to view applied gpo from the domaine controler"
+rsop.msc
+```
 [Use GPResult Command to Check Group Policy: Step-by-step Guide (comparitech.com)](https://www.comparitech.com/net-admin/how-to-use-gpresult-command/#:~:text=GPResult%20Scope%20Command,users%2C%20and%20target%20computer%27s%20settings.)
 ## Windows Licences Activation
 ```cmd title="Activate Windows Server 2019 "
@@ -28,6 +32,16 @@ Dism /online /Set-Edition:ServerStandard /ProductKey:XXXXX-XXXXX-XXXXX-XXXXX-XXX
 => look for a file called **OSPP.VBS**
 ```cmd title="If you’re running 64-bit Office on 64-bit Windows, use the following command:"
 cscript “C:\Program Files\Microsoft Office\Office15\OSPP.VBS”/inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+```
+## Upgrade Windows server 2022 from Evaluation to Standard
+```cmd title="Verify which editions the current installation can be converted to"
+DISM /online /Get-TargetEditions
+```
+```cmd title="Determine the current edition name"
+DISM /online /Get-CurrentEdition
+```
+```cmd title="nter the new edition name and corresponding retail product key"
+DISM /online /Set-Edition:<target edition> /ProductKey:<product key> /AcceptEula
 ```
 ## Shortcut to Run Computer management
 ```
@@ -169,3 +183,13 @@ Check if the service
 
 ## Restrict creation of teams
 https://techlabs.blog/categories/office-365/stop-users-from-being-able-to-create-microsoft-teams
+
+## Office update installations
+
+```cmd
+"C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeC2RClient.exe" /update user displaylevel=false updatetoversion=16.0.17126.20190
+```
+
+```cmd title="check with command on line cmd which process or running task"
+tasklist /FI "IMAGENAME eq OfficeC2RClient.exe"
+```
