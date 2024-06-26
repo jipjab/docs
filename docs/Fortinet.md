@@ -25,3 +25,6 @@ config system global
 set admin-https-redirect enable
 end
 ```
+```title="Diag sniffer les packets en CLI"
+diag sniffer packet any "host 172.21.61.178 and icmp" 4
+```
