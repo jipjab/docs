@@ -75,6 +75,7 @@ nav:
     - Guides:
         - 'Tips & Tricks': 'Tricks.md'
         - 'Minimum Security Settings': 'SecurityProcesses.md'
+        - 'PKI': 'certs.md'
     #- Controles CIS:
     #    - 'M365/AAD': 'Controles-CIS.md'
     - Microsoft:
