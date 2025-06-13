@@ -83,15 +83,10 @@ nav:
         - 'Windows Group Policies': 'GPOs.md'
         - 'SharePoint': 'SharePoint.md'
         - 'Intune': 'Intune.md'
+        - 'Defender for EndPoint': 'MDE.md'
         - 'kql': 'kql.md'
     - Commands:
         - 'Standard': 'commands.md'
         - 'Scripts-Checks': 'FileCheck.md'
         - 'Powershell' : 'powershell.md'
-    - MDE: 'MDE.md'
-    - O365:
-        - 'O365': 'O365.md'
-        - 'O365 Security Best Practices': 'O365SecurityBestPractices.md'
-        - 'O365 Security Center': 'O365SecurityCenter.md'
-        - 'O365 Defender': 'O365Defender.md'
     - Cybereason: 'Cybereason.md'
