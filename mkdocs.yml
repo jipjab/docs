@@ -8,10 +8,11 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.expand
+    - navigation.tracking
+    #- navigation.sections
+    #- navigation.expand
     #- navigation.path
-    - toc.integrate
+    #- toc.integrate
     - search.suggest
     - search.highlight
     - content.tabs.link
