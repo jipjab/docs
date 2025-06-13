@@ -10,7 +10,7 @@ theme:
     #- navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
-    - navigation.path
+    #- navigation.path
     - toc.integrate
     - search.suggest
     - search.highlight
@@ -94,9 +94,4 @@ nav:
         - 'O365 Security Best Practices': 'O365SecurityBestPractices.md'
         - 'O365 Security Center': 'O365SecurityCenter.md'
         - 'O365 Defender': 'O365Defender.md'
-    - 'Security Tools':
-        - 'Security Tools': 'SecurityTools.md'
-        - 'Security Tools - Azure': 'SecurityToolsAzure.md'
-        - 'Security Tools - MDE': 'SecurityToolsMDE.md'
-        - 'Security Tools - O365': 'SecurityToolsO365.md'
     - Cybereason: 'Cybereason.md'
