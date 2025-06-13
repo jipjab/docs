@@ -193,3 +193,10 @@ https://techlabs.blog/categories/office-365/stop-users-from-being-able-to-create
 ```cmd title="check with command on line cmd which process or running task"
 tasklist /FI "IMAGENAME eq OfficeC2RClient.exe"
 ```
+## MS Teams - Clearing Cache in Teams 
+
+New location:
+C:\Users\%username%\AppData\Local\Packages\MSTeams_8wekyb3d8bbwe
+
+Classic location:
+%appdata%\Microsoft\Teams
