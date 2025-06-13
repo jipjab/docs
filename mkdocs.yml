@@ -30,7 +30,7 @@ theme:
         icon: material/toggle-switch
         name: Switch to light mode    
       primary: light blue
-      accent: lime
+      accent: indigo
 
 extra:
   social:
