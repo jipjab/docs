@@ -81,6 +81,7 @@ nav:
     - Microsoft:
         - 'Az. Security Best Practices': 'Azure.md'
         - 'Windows Group Policies': 'GPOs.md'
+        - 'SharePoint': 'SharePoint.md'
         - 'Intune': 'Intune.md'
         - 'kql': 'kql.md'
     - Commands:
