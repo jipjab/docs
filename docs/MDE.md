@@ -63,7 +63,7 @@ C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\DataCollect
 C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseTVM.exe
 ```
 
-## Check if the device has already been already downloaded
+## Check if the device has already been onboarded
 Check if "Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Advanced Threat Protection" has subfolders
 ![Microsoft Intune](/img/mde/SCR-20230717-rz0.png)
 
