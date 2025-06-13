@@ -89,7 +89,7 @@ nav:
         - 'Scripts-Checks': 'FileCheck.md'
         - 'Powershell' : 'powershell.md'
     - MDE: 'MDE.md'
-    -O365:
+    - O365:
         - 'O365': 'O365.md'
         - 'O365 Security Best Practices': 'O365SecurityBestPractices.md'
         - 'O365 Security Center': 'O365SecurityCenter.md'
