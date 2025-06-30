@@ -295,3 +295,104 @@ All Users with a Intune license thats not disabled. 	USER.ASSIGNEDPLANS -ANY (AS
 All users with Yammer Enterprise license assigned and enabled. 	user.assignedPlans -any (assignedPlan.service -eq “YammerEnterprise” -and assignedPlan.capabilityStatus -eq “Enabled”)	
 All users with MicrosoftPrint license assigned and enabled. 	user.assignedPlans -any (assignedPlan.service -eq “MicrosoftPrint” -and assignedPlan.capabilityStatus -eq “Enabled”)	
 All guest users in AAD	(user.userType -eq “Guest”)	Users created in AAD or AD are “Members” and all users you invited in to your tenant are labeled as “Guest” 
+
+```
+## Update Intune connector
+
+Get the PowerShell script here: https://github.com/stevecapacity/IntunePowershell/blob/main/HybridConnectorFixer.ps1
+Video: https://www.youtube.com/watch?v=cZZ0O1vn2do&t=163s
+https://techcommunity.microsoft.com/blog/intunecustomersuccess/microsoft-intune-connector-for-active-directory-security-update/4386898
+
+
+Hybride
+![Hybride](<img/CleanShot 2025-06-30 at 09.35.46@2x.png>)
+
+
+# Voici comment donner ces permissions étape par étape :
+
+## 1. Créer l'OU dédiée
+
+**Dans Active Directory Users and Computers :**
+
+1. Clic droit sur votre domaine → **New** → **Organizational Unit**
+2. Nommez-la `Intune Hybrid Devices`
+3. Décochez "Protect container from accidental deletion" si nécessaire
+
+## 2. Déléguer les permissions sur l'OU
+
+**Méthode 1 : Assistant de délégation (Recommandée)**
+
+1. **Clic droit sur l'OU "Intune Hybrid Devices"** → **Delegate Control...**
+2. Dans l'assistant :
+   - **Next** → **Add** → Saisissez le nom du **Managed Service Account** (MSA) créé par le connecteur
+   - Ou ajoutez le groupe **Domain Computers** temporairement
+3. **Sélectionnez les tâches à déléguer :**
+   - ☑️ **Create, delete, and manage computer accounts**
+   - ☑️ **Reset user passwords and force password change at next logon**
+   - ☑️ **Read all user information**
+   - ☑️ **Modify the membership of a group**
+
+**Méthode 2 : Permissions avancées (Plus précise)**
+
+1. **Clic droit sur l'OU** → **Properties** → **Security** → **Advanced**
+2. **Add** → Saisissez le compte MSA ou le compte de service
+3. **Permissions détaillées à cocher :**
+
+```
+Type: Allow
+Applies to: This object and all descendant objects
+
+Permissions spécifiques :
+☑️ Create Computer objects
+☑️ Delete Computer objects  
+☑️ Write all properties
+☑️ Read all properties
+☑️ Reset password
+☑️ Change password
+☑️ Validated write to DNS host name
+☑️ Validated write to service principal name
+```
+
+## 3. Permissions sur le conteneur Managed Service Accounts
+
+**Dans Active Directory Users and Computers :**
+
+1. **View** → Cochez **Advanced Features** (pour voir les conteneurs système)
+2. Naviguez vers **Domain** → **System** → **Managed Service Accounts**
+3. **Clic droit** sur **Managed Service Accounts** → **Properties** → **Security**
+4. **Add** → Ajoutez le compte qui installe le connecteur
+5. **Permissions à donner :**
+   - ☑️ **Create msDs-ManagedServiceAccount objects**
+   - ☑️ **Read**
+   - ☑️ **Write**
+
+## 4. Vérifier avec PowerShell (Optionnel)
+
+```powershell
+# Vérifier les permissions sur l'OU
+Get-Acl "AD:\OU=Intune Hybrid Devices,DC=votre-domaine,DC=com" | Format-List
+
+# Vérifier le MSA créé
+Get-ADServiceAccount -Filter * | Where-Object {$_.Name -like "*Intune*"}
+```
+
+## 5. Configuration dans le connecteur Intune
+
+1. **Ouvrez l'application "Intune Connector for Active Directory"**
+2. **Configure** → Spécifiez l'OU cible : `OU=Intune Hybrid Devices,DC=votre-domaine,DC=com`
+3. **Test** la connexion et les permissions
+
+## 6. Configuration dans le portail Intune
+
+1. **Microsoft Intune admin center** → **Devices** → **Windows enrollment**
+2. **Windows Autopilot deployment profiles** → Créez ou modifiez un profil
+3. Dans **Out-of-box experience (OOBE)** → Spécifiez l'OU cible
+
+## Points importants :
+
+- Le **nom exact du MSA** sera visible dans l'application du connecteur après installation
+- Si vous ne trouvez pas le MSA, utilisez temporairement un compte de service dédié
+- **Testez toujours** avec un appareil de test avant le déploiement en production
+- Les permissions peuvent prendre quelques minutes à se propager dans AD
+
+Cette configuration permettra au connecteur de créer et gérer les comptes d'ordinateurs dans l'OU dédiée en toute sécurité.
