@@ -1,0 +1,1486 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../img/lexii-io-icon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>MSPortals - Mes Documentations</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#msportalsio" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Mes Documentations" class="md-header__button md-logo" aria-label="Mes Documentations" data-md-component="logo">
+      
+  <img src="../img/lexii-io-icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mes Documentations
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              MSPortals
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Tricks/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tips & Tricks
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../SecurityProcesses/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Minimum Security Settings
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../certs/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  PKI
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Controles-CIS/" class="md-tabs__link">
+          
+  
+  
+  Controles CIS
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Azure/" class="md-tabs__link">
+          
+  
+  
+  Microsoft
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../commands/" class="md-tabs__link">
+          
+  
+  
+  Commands
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Cybereason/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Cybereason
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Mes Documentations" class="md-nav__button md-logo" aria-label="Mes Documentations" data-md-component="logo">
+      
+  <img src="../img/lexii-io-icon.png" alt="logo">
+
+    </a>
+    Mes Documentations
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tricks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tips & Tricks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SecurityProcesses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Minimum Security Settings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../certs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PKI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Controles CIS
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Controles CIS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Controles-CIS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    M365/AAD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Microsoft
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Microsoft
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Az. Security Best Practices
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GPOs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Group Policies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SharePoint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SharePoint
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Intune/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Intune
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Defender for EndPoint
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kql/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    kql
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Commands
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Commands
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Standard
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FileCheck/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Scripts-Checks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../powershell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Powershell
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cybereason/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cybereason
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#msportalsio" class="md-nav__link">
+    <span class="md-ellipsis">
+      MSportals.io
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>MSPortals</h1>
+
+<h2 id="msportalsio">MSportals.io</h2>
+<p>Microsoft 365 Admin Portals
+Microsoft 365 Admin Center : https://admin.microsoft.com
+Microsoft 365 Apps Admin Center: https://config.office.com
+Exchange Admin Center (EAC) New: https://admin.exchange.microsoft.com
+Exchange Admin Center (EAC) Old: https://outlook.office365.com/ecp/</p>
+<p>Microsoft Purview Microsoft 365 Compliance: https://compliance.microsoft.com
+ • B2B 
+Microsoft 365 network connectivity test: https://connectivity.office.com
+Microsoft 365 Network Insights Preview: https://portal.office.com/adminportal/home#/networkperformance
+Microsoft Call Quality Dashboard (Teams)
+https://cqd.teams.microsoft.com
+Microsoft Call Quality Dashboard (Lync)
+https://cqd.lync.com
+Microsoft Intune Admin Center Endpoint Manager: https://intune.microsoft.com
+ • aka.ms Old 🔗 B2B 
+Microsoft Endpoint Manager Admin Console Release Candidate
+https://rc-devicemanagement.portal.azure.com
+Microsoft Endpoint Manager Admin Console Old
+https://devicemanagement.portal.azure.com
+Microsoft Intune for Education
+https://intuneeducation.portal.azure.com
+Microsoft Online
+https://portal.microsoftonline.com/IWDefault.aspx
+Microsoft Store for Business
+https://businessstore.microsoft.com
+Microsoft Store for Education
+https://educationstore.microsoft.com
+Microsoft Stream Admin Center
+https://web.microsoftstream.com/admin
+Microsoft Purview Azure and Fabric Governance
+https://web.purview.azure.com/
+Microsoft Purview Preview Azure and Fabric Governance
+https://purview.microsoft.com/
+Microsoft Teams Admin Center
+https://admin.teams.microsoft.com
+ • aka.ms 
+Teams Rooms Pro Management portal
+https://portal.rooms.microsoft.com/
+My Staff (preview)
+https://mystaff.microsoft.com
+ • aka.ms 
+Power Apps ISV Studio
+https://isvstudio.powerapps.com/home
+ • aka.ms 
+Power Apps Maker Portal
+https://make.powerapps.com
+Power Automate Maker Portal Microsoft Flow
+https://make.powerautomate.com
+ • Old 🔗 
+Power BI Admin Portal
+https://app.powerbi.com/admin-portal/usageMetrics?noSignUpCheck=1
+Power Pages Preview
+https://make.powerpages.microsoft.com/
+Power Platform admin center
+https://admin.powerplatform.microsoft.com
+ • aka.ms 
+Power Virtual Agents Portal
+https://powerva.microsoft.com
+Phone Number Service Center
+https://pstnsd.powerappsportals.com/
+SharePoint Admin Center
+https://admin.microsoft.com/sharepoint
+SharePoint look book
+https://lookbook.microsoft.com/
+Skype for Business admin center Deprecated
+https://webdir2a.online.lync.com/LSCP
+Yammer Admin
+https://www.yammer.com/office365/admin
+My Applications (My Apps)
+https://myapplications.microsoft.com/
+My Access (Access Packages)
+https://myaccess.microsoft.com/
+ • B2B 
+Azure IT Admin Portals
+Microsoft Azure Portal
+https://portal.azure.com
+ • aka.ms B2B 
+Microsoft Azure Release Candidate
+https://rc.portal.azure.com
+Microsoft Azure Preview
+https://preview.portal.azure.com
+Microsoft Entra Admin Center (Formerly Azure AD Admin Center) Identity Management
+https://entra.microsoft.com
+ • aka.ms B2B 
+Create New Tenant / Azure Active Directory
+https://account.azure.com/organization
+Azure Cloud Shell
+https://shell.azure.com
+Azure Cosmos DB
+https://cosmos.azure.com
+Azure Data Factory
+https://adf.azure.com
+Azure Synapse Analytics
+https://web.azuresynapse.net/
+Azure Non-profit Portal
+https://nonprofit.microsoft.com
+Azure Resource Explorer
+https://resources.azure.com
+Azure Resource Explorer Raw
+https://resources.azure.com/raw
+Azure IT Admin Portals - Sub Portal Links
+Azure Authentication methods
+https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/AuthenticationMethodsMenuBlade/AdminAuthMethods/
+Azure Backup Center
+https://portal.azure.com/#blade/Microsoft_Azure_DataProtection/BackupCenterMenuBlade/overview
+Privileged Identity Management
+https://portal.azure.com/#blade/Microsoft_Azure_PIMCommon/CommonMenuBlade/quickStart
+ • aka.ms 
+Desktop Analytics Portal
+https://devicemanagement.portal.azure.com/#blade/Microsoft_M365_ManageClient/ManageClientFrameBlade
+Azure Sentinel
+https://portal.azure.com/#blade/Microsoft_Azure_Security_Insights/WorkspaceSelectorBlade
+Azure Universal Print Raw
+https://portal.azure.com/#blade/Universal_Print/MainMenuBlade/Overview
+Azure AI / ML Portals
+Azure AI Studio Preview
+https://ai.azure.com
+Azure Machine Learning Studio
+https://ml.azure.com
+Bot Framework Dev Portal
+https://dev.botframework.com
+Custom Translator
+https://portal.customtranslator.azure.ai/
+Custom Vision
+https://www.customvision.ai/
+Vision Studio Preview
+https://preview.vision.azure.com/
+Speech Studio
+https://speech.microsoft.com/
+Language Studio
+https://language.azure.com/
+LUIS Portal
+https://www.luis.ai/
+QnA Maker Portal
+https://www.qnamaker.ai/
+Video Indexer
+https://www.videoindexer.ai/
+Azure Graph Explorer Deprecated
+https://graphexplorer.azurewebsites.net/#
+Azure OpenAI service
+https://oai.azure.com/portal
+Microsoft Licensing/Support Portals
+Azure Subscriptions
+https://account.azure.com/Subscriptions
+Azure New Support Request
+https://portal.azure.com/#create/Microsoft.Support
+Microsoft Azure Enterprise Portal
+https://ea.azure.com
+Microsoft FastTrack Includes App Assure
+https://fasttrack.microsoft.com
+Microsoft License Advisor
+https://mla.microsoft.com
+Microsoft Partner Center
+https://partner.microsoft.com
+Microsoft Services Hub
+https://serviceshub.microsoft.com
+Microsoft Volume Licensing eAgreements
+https://eagreements.microsoft.com/
+Next Generation Volume Licensing
+https://businessaccount.microsoft.com
+Volume Licensing Service Center
+https://www.microsoft.com/Licensing/servicecenter/
+Microsoft Defender / Security IT Admin Portals
+Microsoft Security Copilot
+https://securitycopilot.microsoft.com/
+Microsoft Defender Threat Intelligence
+https://ti.defender.microsoft.com/
+Microsoft 365 Defender Previously Microsoft 365 security
+https://security.microsoft.com
+ • B2B aka.ms 
+Microsoft Defender for Cloud Apps (MDA) Previously Microsoft Cloud App Security (MCAS)
+https://portal.cloudappsecurity.com
+ • aka.ms 
+Microsoft Defender for Endpoints (MDE) Deprecated: Previously Defender ATP
+https://securitycenter.windows.com
+ • aka.ms 
+Microsoft Defender for Identity (MDI) Deprecated: Previously Azure ATP
+https://portal.atp.azure.com
+ • aka.ms 
+Microsoft Defender for Internet of Things (IoT)
+https://portal.azure.com/#blade/Microsoft_Azure_IoT_Defender/IoTDefenderDashboard
+Microsoft Defender ATP Testground Being deprecated 09/30/2022
+https://demo.wd.microsoft.com/
+Attack simulation training sub-portal
+https://security.microsoft.com/attacksimulator
+ • aka.ms 
+Microsoft Defender for Cloud (MDC) Azure Security Center (ASC)
+https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0
+Microsoft Secure Score
+https://security.microsoft.com/securescore
+Microsoft Security Intelligence
+https://microsoft.com/wdsi
+Multi-factor authentication (MFA)
+https://account.activedirectory.windowsazure.com/usermanagement/multifactorverification.aspx
+CloudKnox Permissions Management
+https://c1.app.mciem.cloudknox.io
+Microsoft AccountGuard
+https://accountguard.microsoft.com
+Office 365 Security &amp; Compliance Deprecated
+https://protection.office.com
+Report an unsafe site (login)
+https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site
+Report an unsafe site (guest)
+https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest
+Submit a file for malware analysis
+https://www.microsoft.com/en-us/wdsi/filesubmission
+Submit Vulnerability
+https://msrc.microsoft.com/report/vulnerability
+Reporting Infringement or DCMA Notice to Microsoft
+https://www.microsoft.com/en-us/legal/intellectualproperty/infringement
+Reporting Issue with Bingbot
+https://www.microsoft.com/en-us/legal/intellectualproperty/infringement
+Submit Abuse Report (CERT)
+https://msrc.microsoft.com/report/abuse
+Developer Portals
+Copilot Studio
+https://copilotstudio.microsoft.com/
+Microsoft Fabric
+https://fabric.microsoft.com/
+Actionable Messages Developer Dashboard
+https://outlook.office.com/connectors/oam/publish
+ • aka.ms 
+Actionable Message Designer
+https://amdesigner.azurewebsites.net/
+Adaptive Cards Designer
+https://adaptivecards.io/designer/
+Applied AI Form Recognizer Studio - Preview
+https://formrecognizer.appliedai.azure.com
+Azure Data Explorer
+https://dataexplorer.azure.com/
+ • aka.ms 
+Azure DevOps
+https://aex.dev.azure.com/me
+ • B2B 
+Bing Maps Portal
+https://www.bingmapsportal.com/
+Microsoft Graph Explorer
+https://developer.microsoft.com/en-us/graph/graph-explorer
+ • aka.ms B2B 
+JWT/MS Token Decoder
+https://jwt.ms/
+Message Card Playground New Tool - Actionable Message Designer
+https://messagecardplayground.azurewebsites.net/
+Microsoft Graph Toolkit
+https://mgt.dev/
+Visual Studio (VS) Code in the Web
+https://www.vscode.dev/
+Visual Studio (VS) Code in the Web Insiders Version
+https://insiders.vscode.dev/
+Microsoft Online Error Code Lookup
+https://login.microsoftonline.com/error
+Microsoft AppSource
+https://appsource.microsoft.com/
+Visual Studio Subscriptions
+https://my.visualstudio.com
+Visual Studio Subscriptions Management
+https://manage.visualstudio.com
+Microsoft Clarity (HeatMaps &amp; Sessions Recordings)
+https://clarity.microsoft.com/
+Bing WebMaster Tools
+https://www.bing.com/webmasters
+Developer Portal for Teams
+https://dev.teams.microsoft.com
+Microsoft 365 Developer Program Dashboard
+https://developer.microsoft.com/microsoft-365/profile
+Health / Status Portals
+Microsoft Service health status Microsoft 365, Azure, Power Platform
+https://status.office.com/
+Microsoft 365 Service health status
+https://portal.office.com/ServiceStatus
+Microsoft 365 Service health status (Admin portal)
+https://admin.microsoft.com/AdminPortal/Home#/servicehealth
+Azure DevOps - Status
+https://status.dev.azure.com
+Azure Service Health -&gt; Service issues
+https://portal.azure.com/?source=akams%2F#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/serviceIssues
+ • aka.ms 
+Azure - Status
+https://status.azure.com/status/
+Windows release health
+https://learn.microsoft.com/windows/release-health/
+Twitter - Microsoft 365 Status Page
+https://twitter.com/MSFT365Status
+Microsoft Trials
+Microsoft Defender for Identity Trial -3-month
+https://signup.microsoft.com/Signup?OfferId=a0db242a-96d7-4f99-bd52-05c0d5556257&amp;ali=1
+Microsoft Defender for Office 365 (Plan 2) 90 Day, Full Tenant Trial
+https://signup.microsoft.com/signup/logout?OfferId=20298c4d-d500-47fa-b3cd-a3f7d75d9253
+Microsoft Defender for Endpoint P2 Trial - 3-month
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&amp;ru=https://aka.ms/MDEp2OpenTrial
+Microsoft 365 E5 Security Trial - 1-month
+https://signup.microsoft.com/Signup?OfferId=b73fce33-ac89-4175-b199-0173b4c74b1f&amp;ali=1
+Microsoft Defender for Identity Trial - 3-month
+https://signup.microsoft.com/Signup?OfferId=a0db242a-96d7-4f99-bd52-05c0d5556257&amp;ali=1
+App governance add-on to Microsoft Defender for Cloud Apps Trial - 90-day
+https://signup.microsoft.com/get-started/signup?products=a52e9277-0d85-4480-8cae-a84bc2ab32ae&amp;culture=en-us&amp;country=US&amp;ali=1
+Microsoft 365 Defender portal trials hub
+https://security.microsoft.com/trialHorizontalHub?sku=MDO&amp;ref=DocsRef
+Microsoft Purview compliance portal trials hub
+https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&amp;ref=DocsRef
+Microsoft 365 E5 Insider Risk Management Trial
+https://signup.microsoft.com/signup?OfferId=7B74C69A-2BFC-41C9-AAF1-23070354622D
+Microsoft 365 E5 Information Protection and Governance Trial
+https://signup.microsoft.com/signup?OfferId=503D4D1D-0169-4E1F-AE26-DB041C54C5C4
+Microsoft 365 E5 Compliance Trial
+https://signup.microsoft.com/Signup?OfferId=d53d8416-fd1f-4552-831c-b5828ef2cbde&amp;ali=1
+Compliance Manager Premium Assessment Add-On Trial - 90-day
+https://signup.microsoft.com/get-started/signup?products=e320704d-b7c9-4012-b6a6-0a2679790360&amp;culture=en-us&amp;country=US&amp;ali=1
+Microsoft 365 E5 eDiscovery and Audit Trial
+https://signup.microsoft.com/signup?OfferId=c6ca396f-4467-4761-95f6-b6d9a5386716
+Privacy Management - subject rights request (50) Trial - 90-day
+https://signup.microsoft.com/get-started/signup?products=1c6c565d-cae2-4648-aa92-bf52b523fdbd&amp;ali=1
+Priva Privacy Risk Management Trial - 90-day
+https://signup.microsoft.com/get-started/signup?products=e6b633e0-1b1e-4d95-b414-3ce9e8023c39
+Sign-up for Office 365 E3, 25 licenses trial, 30-day
+https://signup.microsoft.com/get-started/signup?OfferId=B07A1127-DE83-4a6d-9F85-2C104BDAE8B4&amp;dl=ENTERPRISEPACK&amp;ali=1&amp;products=cfq7ttc0k59j%3a0009&amp;bac=1
+Microsoft 365 Business Premium Trial, 1 Month
+https://signup.microsoft.com/get-started/signup?products=53e11149-82f9-4bca-a7f2-8f72592e4f03&amp;mproducts=CFQ7TTC0LCHC:0003&amp;fmproducts=CFQ7TTC0LCHC:0003&amp;culture=en-in&amp;country=in&amp;ali=1
+Sign-up for Azure $200 US Credits in 3 months, 12 months free services trial
+https://azure.microsoft.com/en-us/offers/ms-azr-0044p/
+Sign-up for Dynamics 365 for 30 days trial
+https://trials.dynamics.com
+Sign-up for Microsoft 365 Developer Program trial
+https://developer.microsoft.com/en-us/microsoft-365/dev-program
+Sign-up for Intune, 1-month trial
+https://go.microsoft.com/fwlink/?linkid=2019088
+Other Useful Microsoft Portals
+Legacy Applications (B2B Redeem Invite)
+https://account.activedirectory.windowsazure.com/
+ • B2B 
+Azure Lighthouse Blade
+https://portal.azure.com/#blade/Microsoft_Azure_CustomerHub/LighthouseBlade
+Become Microsoft Certified
+https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PjDI/
+ • aka.ms 
+Customer Digital Experiences Previously Demos.Microsoft.com
+https://cdx.transform.microsoft.com
+Deployment Guides for Microsoft 365
+https://assistants.microsoft.com/
+Feedback
+https://feedbackportal.microsoft.com/
+Group Policy Search
+https://gpsearch.azurewebsites.net/
+Infringement Report
+https://msrc.microsoft.com/report/infringement
+Fast Cloud File Migrations
+https://mover.io/
+Microsoft Adoption
+https://adoption.microsoft.com/
+Microsoft Assessments
+https://learn.microsoft.com/en-gb/assessments/
+Microsoft Azure Sponsorships
+https://www.microsoftazuresponsorships.com
+Microsoft Community
+https://answers.microsoft.com
+Microsoft Dynamics Lifecycle Services
+https://lcs.dynamics.com
+Microsoft Dynamics 365 and Power Platform Roadmap
+https://experience.dynamics.com/releaseplans/
+Microsoft Exam Sandbox
+https://mscertdemo.starttest.com/
+Microsoft Events
+https://events.microsoft.com
+Microsoft Home Use Program
+https://www.microsoft.com/home-use-program
+Microsoft MVP
+https://mvp.microsoft.com
+Microsoft Open Source
+https://opensource.microsoft.com
+Microsoft Remote Connectivity Analyzer
+https://testconnectivity.microsoft.com
+ • aka.ms 
+Microsoft Reseller Profile Registration Portal
+https://reselleruat.microsoftcrmportals.com/
+Microsoft Security Response Center
+https://msrc-blog.microsoft.com/
+ • aka.ms 
+Microsoft Startups
+https://portal.startups.microsoft.com
+Microsoft 365 Lighthouse
+https://lighthouse.microsoft.com/
+Office 365 Anti-Spam IP Delist Portal
+https://sender.office.com
+Outlook Oauth Sandbox
+https://myadevcenter.outlook.office365.com/
+Office UI Fabric Icons
+https://uifabricicons.azurewebsites.net/
+ • aka.ms 
+Power BI Playground
+https://playground.powerbi.com/
+Azure Cosmos DB Query Playground
+https://www.documentdb.com/sql/demo
+Service Trust Portal
+https://servicetrust.microsoft.com
+Azure Active Directory - Where is your data located?
+https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9
+Tech Community Video Hub
+https://techcommunity.microsoft.com/t5/video-hub/ct-p/VideoHub
+ • aka.ms 
+Windows Virtual Desktop Consent Page
+https://rdweb.wvd.microsoft.com
+Microsoft Documentation
+https://learn.microsoft.com/docs/
+Microsoft Training
+https://learn.microsoft.com/training/
+Outlook.com Smart Network Data Service
+https://sendersupport.olc.protection.outlook.com/snds/index.aspx
+Azure Pass - Activate Azure subscription using Azure Pass Codes
+https://www.microsoftazurepass.com/
+Azure Updates
+https://azure.microsoft.com/en-us/updates/
+Microsoft Unlocked
+https://unlocked.microsoft.com/
+Get Security Done Dave Caddick
+https://dcaddick.github.io/gsd_public/
+ • aka.ms 
+Windows 365 Subscription URL
+https://rdweb.wvd.microsoft.com</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2023 <a href="#"  target="_blank" rel="noopener">JiPJaB</a>
+
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/jipjab" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/daddydy" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/mutuyimana" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+    
+    
+      
+    
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+  <!-- Add scripts that need to run before here -->
+  
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  <!-- Add scripts that need to run afterwards here -->
+  <title>Lorem ipsum dolor sit amet</title>
+
+  </body>
+</html>
