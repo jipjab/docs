@@ -200,3 +200,51 @@ C:\Users\%username%\AppData\Local\Packages\MSTeams_8wekyb3d8bbwe
 
 Classic location:
 %appdata%\Microsoft\Teams
+
+
+## Fix "Can't Extend C: Drive with Unallocated Space" in Windows 10/11
+
+![alt text](</docs/img/infra/CleanShot 2025-11-28 at 08.27.29.png>)
+1. disable Windows recovery environment
+```cmd
+reagentc /disable
+```
+![alt text](</docs/img/infra/CleanShot 2025-11-28 at 08.35.52.png>)
+2. get the recovery partition details
+```cmd
+diskpart
+```
+```cmd
+list disk
+```
+```cmd title="select the recovery disk"
+select disk 0
+```
+```cmd title="show all partitions on selected disk, in this case it is disk 0"
+list partition
+```
+```cmd title="select the recovery partition"
+select partition 4
+```
+![alt text](</docs/img/infra/CleanShot 2025-11-28 at 08.41.06.png>)
+```cmd title="get the partition details"
+detail partition
+```
+![alt text](</docs/img/infra/CleanShot 2025-11-28 at 08.43.35.png>)
+
+Copy the partion **type** and its **attribut** in a notepad and then delete the partition
+
+```cmd "
+delete partition override
+```
+This will delete the recovery partition and allow you to extend the C drive
+![alt text](</docs/img/infra/CleanShot 2025-11-28 at 08.54.43.png>)
+
+3. Re-Create a recovery partition drive of 1GB and format it as NTFS with a letter
+![alt text](</docs/img/infra/CleanShot 2025-11-28 at 08.56.40.png>)
+![alt text](</docs/img/infra/CleanShot 2025-11-28 at 08.59.50.png>)
+![alt text](</docs/img/infra/CleanShot 2025-11-28 at 09.06.56.png>)
+The recovery partition is now created
+![alt text](</docs/img/infra/CleanShot 2025-11-28 at 09.04.31.png>)
+4. hide the partition
+![alt text](</docs/img/infra/CleanShot 2025-11-28 at 09.07.37.png>)

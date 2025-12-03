@@ -15,3 +15,5 @@ nano /etc/sudoers
 ### User privilege specification
 root    ALL=(ALL:ALL) ALL
 jip     ALL=(ALL:ALL) ALL
+
+## initiaé 
